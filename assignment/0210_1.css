@@ -1,0 +1,71 @@
+.s1 > h1 {
+  color: rgb(0, 200, 0);
+}
+.s1 > h2 {
+  color: blue;
+}
+.s1 span {
+  color: #ff0000;
+}
+.s1 img {
+  position: absolute;
+  left: 400px;
+  top: 40px;
+}
+.s2 p {
+  line-height: e1.8;
+}
+.s2 a {
+  text-decoration: none;
+}
+.s2 .del {
+  text-decoration: line-through;
+}
+.trans1 {
+  text-transform: uppercase;
+}
+.trans2 {
+  text-transform: capitalize;
+}
+.s4 h1 {
+  font-size: 100px;
+  font-family: Arial Rounded MT;
+}
+.s4 .shadow1 {
+  color: orange;
+  text-shadow: 1px 1px;
+}
+.s4 .shadow2 {
+  text-shadow: 5px 5px 3px #f00;
+}
+.s4 .shadow3 {
+  color: #fff;
+  text-shadow: 7px -7px 5px #000;
+}
+
+.s5 h1 {
+  font-size: 80px; /* 글자 크기 */
+  font-family: "Arial Rounded MT"; /* 글꼴 */
+  letter-spacing: 4px; /* 자간 */
+}
+.shadow4 {
+  color: #000; /* 글자색 */
+  text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3,
+    -2px -15px 11px #f80, 2px -19px 18px #f20; /* 텍스트 그림자 */
+}
+.background {
+  background-color: #222;
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+.letter1 {
+  letter-spacing: 0.2em;
+}
+.letter2 {
+  letter-spacing: 0.5em;
+}
+.under {
+  color: red;
+  text-decoration: underline;
+}
