@@ -1,0 +1,29 @@
+.s1 > h2 {
+  color: blue;
+}
+.s1 > p {
+  font-size: 12px;
+  margin-left: 20px;
+}
+.bluetext {
+  color: blue;
+}
+h2.accent {
+  background-color: #222;
+  color: #fff;
+  padding: 5px;
+}
+.s5 > .browntext {
+  color: brown;
+}
+.s5 > .boldtext {
+  font-weight: bold;
+}
+#container {
+  width: 600px;
+  padding: 15px;
+  border: 1px dotted gray;
+}
+.underline {
+  text-decoration: underline;
+}
