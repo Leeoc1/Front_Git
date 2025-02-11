@@ -1,0 +1,29 @@
+.s1 a:link,
+.s1 a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.s1 a:hover,
+.s1 a:active {
+  background-color: red;
+}
+.s2 a:link {
+  background-color: yellow;
+}
+
+.s2 a:visited {
+  background-color: cyan;
+}
+
+.s2 a:hover {
+  background-color: lightgreen;
+}
+
+.s2 a:active {
+  background-color: hotpink;
+}
