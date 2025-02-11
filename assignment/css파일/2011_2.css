@@ -1,59 +1,59 @@
-.s1 table {
+.s3 table {
   border-collapse: collapse;
   width: ;
 }
 
-.s1 th,
-.s1 td {
+.s3 th,
+.s3 td {
   text-align: left;
   padding: 8px;
 }
-.s1 tr:nth-child(even) {
-  background-color: #d6eeee;
-}
-
-.s2 table,
-.s2 th,
-.s2 td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-.s2 th:nth-child(even),
-.s2 td:nth-child(even) {
-  background-color: #d6eeee;
-}
-
-.s3 table,
-.s3 th,
-.s3 td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
 .s3 tr:nth-child(even) {
+  background-color: #d6eeee;
+}
+
+.s4 table,
+.s4 th,
+.s4 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.s4 th:nth-child(even),
+.s4 td:nth-child(even) {
+  background-color: #d6eeee;
+}
+
+.s5 table,
+.s5 th,
+.s5 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.s5 tr:nth-child(even) {
   background-color: rgba(150, 212, 212, 0.4);
 }
 
-.s3 th:nth-child(even),
-.s3 td:nth-child(even) {
+.s5 th:nth-child(even),
+.s5 td:nth-child(even) {
   background-color: rgba(150, 212, 212, 0.4);
 }
 table {
   margin: 100px auto;
 }
-.s4 table {
+.s6 table {
   border-collapse: collapse;
   width: 100%;
 }
 
-.s4 th,
-.s4 td {
+.s6 th,
+.s6 td {
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
 
-.s4 tr:hover {
+.s6 tr:hover {
   background-color: #d6eeee;
 }
