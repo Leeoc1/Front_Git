@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            padding: 15px;
+        }
+
+        .s1 div {
+            background-color: lightgray;
+            width: 300px;
+            border: 15px solid green;
+            padding: 50px;
+            margin: 0px;
+        }
+
+        .s2 div {
+            width: 320px;
+            height: 60px;
+            padding: 10px;
+            border: 15px solid gray;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <table>
+            <tr>
+                <th>Result</th>
+                <th>Description</th>
+                <th>Name</th>
+                <th>Number</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>non-breaking space</td>
+                <td>&amp;
+                    nbsp;
+                </td>
+                <td>&amp;
+                    #160;
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;
+                </td>
+                <td>less than</td>
+                <td>&amp;
+                    lt;
+                </td>
+                <td>&amp;
+                    #60;
+                </td>
+            </tr>
+            <tr>
+                <td>&gt;
+                </td>
+                <td>greater than</td>
+                <td>&amp;
+                    gt;
+                </td>
+                <td>&amp;
+                    #62;
+                </td>
+            </tr>
+            <tr>
+                <td>&amp;
+                </td>
+                <td>ampersand</td>
+                <td>&amp;
+                    amp;
+                </td>
+                <td>&amp;
+                    #38;
+                </td>
+            </tr>
+            <tr>
+                <td>"</td>
+                <td>double quotation mark </td>
+                <td>&amp;
+                    quot;
+                </td>
+                <td>&amp;
+                    #34;
+                </td>
+            </tr>
+            <tr>
+                <td>'</td>
+                <td>single quotation mark</td>
+                <td>&amp;
+                    apos;
+                </td>
+                <td>&amp;
+                    #39;
+                </td>
+            </tr>
+            <tr>
+                <td>¢</td>
+                <td>cent</td>
+                <td>&amp;
+                    cent;
+                </td>
+                <td>&amp;
+                    #162;
+                </td>
+            </tr>
+            <tr>
+                <td>£</td>
+                <td>pound</td>
+                <td>&amp;
+                    pound;
+                </td>
+                <td>&amp;
+                    #163;
+                </td>
+            </tr>
+            <tr>
+                <td>¥</td>
+                <td>yen</td>
+                <td>&amp;
+                    yen;
+                </td>
+                <td>&amp;
+                    #165;
+                </td>
+            </tr>
+            <tr>
+                <td>€</td>
+                <td>euro</td>
+                <td>&amp;
+                    euro;
+                </td>
+                <td>&amp;
+                    #8364;
+                </td>
+            </tr>
+            <tr>
+                <td>©</td>
+                <td>copyright</td>
+                <td>&amp;
+                    copy;
+                </td>
+                <td>&amp;
+                    #169;
+                </td>
+            </tr>
+            <tr>
+                <td>®</td>
+                <td>trademark</td>
+                <td>&amp;
+                    reg;
+                </td>
+                <td>&amp;
+                    #174;
+                </td>
+            </tr>
+    </section>
+    <section>
+        <table>
+            <tr>
+                <th>Mark</th>
+                <th>Character</th>
+                <th>Construct</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>&nbsp;̀</td>
+                <td>a</td>
+                <td>a&amp;#768;</td>
+                <td>à</td>
+            </tr>
+            <tr>
+                <td>&nbsp;́</td>
+                <td>a</td>
+                <td>a&amp;#769;</td>
+                <td>á</td>
+            </tr>
+            <tr>
+                <td>̂</td>
+                <td>a</td>
+                <td>a&amp;#770;</td>
+                <td>â</td>
+            </tr>
+            <tr>
+                <td>&nbsp;̃</td>
+                <td>a</td>
+                <td>a&amp;#771;</td>
+                <td>ã</td>
+            </tr>
+            <tr>
+                <td>&nbsp;̀</td>
+                <td>O</td>
+                <td>O&amp;#768;</td>
+                <td>Ò</td>
+            </tr>
+            <tr>
+                <td>&nbsp;́</td>
+                <td>O</td>
+                <td>O&amp;#769;</td>
+                <td>Ó</td>
+            </tr>
+            <tr>
+                <td>̂</td>
+                <td>O</td>
+                <td>O&amp;#770;</td>
+                <td>Ô</td>
+            </tr>
+            <tr>
+                <td>&nbsp;̃</td>
+                <td>O</td>
+                <td>O&amp;#771;</td>
+                <td>Õ</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <table>
+            <tr>
+                <th>Char</th>
+                <th>Number</th>
+                <th>Entity</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Α</td>
+                <td>&amp;#913;</td>
+                <td>&amp;Alpha;</td>
+                <td>GREEK ALPHA</td>
+            </tr>
+            <tr>
+                <td>Β</td>
+                <td>&amp;#914;</td>
+                <td>&amp;Beta;</td>
+                <td>GREEK BETA</td>
+            </tr>
+            <tr>
+                <td>Γ</td>
+                <td>&amp;#915;</td>
+                <td>&amp;Gamma;</td>
+                <td>GREEK GAMMA</td>
+            </tr>
+            <tr>
+                <td>Δ</td>
+                <td>&amp;#916;</td>
+                <td>&amp;Delta;</td>
+                <td>GREEK DELTA</td>
+            </tr>
+            <tr>
+                <td>Ε</td>
+                <td>&amp;#917;</td>
+                <td>&amp;Epsilon;</td>
+                <td>GREEK EPSILON</td>
+            </tr>
+            <tr>
+                <td>Ζ</td>
+                <td>&amp;#918;</td>
+                <td>&amp;Zeta;</td>
+                <td>GREEK ZETA</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <table>
+            <tr>
+                <th>Char</th>
+                <th>Number</th>
+                <th>Entity</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>©</td>
+                <td>&amp;#169;</td>
+                <td>&amp;copy;</td>
+                <td>COPYRIGHT</td>
+            </tr>
+            <tr>
+                <td>®</td>
+                <td>&amp;#174;</td>
+                <td>&amp;reg;</td>
+                <td>REGISTERED</td>
+            </tr>
+            <tr>
+                <td>€</td>
+                <td>&amp;#8364;</td>
+                <td>&amp;euro;</td>
+                <td>EURO SIGN</td>
+            </tr>
+            <tr>
+                <td>™</td>
+                <td>&amp;#8482;</td>
+                <td>&amp;trade;</td>
+                <td>TRADEMARK</td>
+            </tr>
+            <tr>
+                <td>←</td>
+                <td>&amp;#8592;</td>
+                <td>&amp;larr;</td>
+                <td>LEFT ARROW</td>
+            </tr>
+            <tr>
+                <td>↑</td>
+                <td>&amp;#8593;</td>
+                <td>&amp;uarr;</td>
+                <td>UP ARROW</td>
+            </tr>
+            <tr>
+                <td>→</td>
+                <td>&amp;#8594;</td>
+                <td>&amp;rarr;</td>
+                <td>RIGHT ARROW</td>
+            </tr>
+            <tr>
+                <td>↓</td>
+                <td>&amp;#8595;</td>
+                <td>&amp;darr;</td>
+                <td>DOWN ARROW</td>
+            </tr>
+            <tr>
+                <td>♠</td>
+                <td>&amp;#9824;</td>
+                <td>&amp;spades;</td>
+                <td>SPADE</td>
+            </tr>
+            <tr>
+                <td>♣</td>
+                <td>&amp;#9827;</td>
+                <td>&amp;clubs;</td>
+                <td>CLUB</td>
+            </tr>
+            <tr>
+                <td>♥</td>
+                <td>&amp;#9829;</td>
+                <td>&amp;hearts;</td>
+                <td>HEART</td>
+            </tr>
+            <tr>
+                <td>♦</td>
+                <td>&amp;#9830;</td>
+                <td>&amp;diams;</td>
+                <td>&nbsp;DIAMOND</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <table>
+            <tr>
+                <th>이모티콘</th>
+                <th>값</th>
+                <th>Try</th>
+            </tr>
+            <tr>
+                <td>
+                    🗻
+                </td>
+                <td> & #128507;</td>
+                <td><a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_emoji_128507">
+                        시도해보세요 »
+                    </a></td>
+            </tr>
+            <tr>
+                <td>
+                    🗼
+                </td>
+                <td>
+                    & #128508;
+                </td>
+                <td><a target="_blank" class="w3-btn btnsmall"
+                        href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_emoji_128508">
+                        시도해보세요 »
+                    </a></td>
+            </tr>
+            <tr>
+                <td>
+                    🗽
+                </td>
+                <td>
+                    & #128509;
+                </td>
+                <td><a target="_blank" class="w3-btn btnsmall"
+                        href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_emoji_128509">
+                        시도해보세요 »
+                    </a></td>
+            </tr>
+            <tr>
+                <td>
+                    🗾
+                </td>
+                <td>
+                    & #128510;
+                </td>
+                <td><a target="_blank" l" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_emoji_128510">
+                        시도해보세요 »
+                    </a></td>
+            </tr>
+            <tr>
+                <td>
+                    🗿
+
+                </td>
+                <td>
+                    & #128511;
+                </td>
+                <td><a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_emoji_128511">
+                        시도해보세요 »
+                    </a></td>
+            </tr>
+            <tr>
+                <td>
+                    😀
+
+                </td>
+                <td>
+                    & #128512;
+
+                </td>
+                <td><a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_emoji_128512">
+                        시도해보세요 »
+
+                    </a></td>
+            </tr>
+            <tr>
+                <td>
+                    😁
+
+                </td>
+                <td>
+                    & #128513;
+
+                </td>
+                <td><a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_emoji_128513">
+                        시도해보세요 »
+
+                    </a></td>
+            </tr>
+            <tr>
+                <td>
+                    😂
+
+                </td>
+                <td>
+                    & #128514;
+
+                </td>
+                <td><a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_emoji_128514">
+                        시도해보세요 »
+
+                    </a></td>
+            </tr>
+            <tr>
+                <td>
+                    😃
+
+                </td>
+                <td>
+                    & #128515;
+
+                </td>
+                <td><a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_emoji_128515">
+                        시도해보세요 »
+
+                    </a></td>
+            </tr>
+            <tr>
+                <td>
+                    😄
+
+                </td>
+                <td>
+                    & #128516;
+
+                </td>
+                <td><a target="_blank" class="w3-btn btnsmall"
+                        href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_emoji_128516">
+                        시도해보세요 »
+                    </a></td>
+            </tr>
+            <tr>
+                <td>
+                    😅
+
+                </td>
+                <td>
+                    & #128517;
+
+                </td>
+                <td><a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_emoji_128517">
+                        시도해보세요 »
+                    </a></td>
+            </tr>
+        </table>
+    </section>
+    <section class="s1">
+        <h2>Demonstrating the Box Model</h2>
+
+        <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders,
+            padding,
+            margins, and the actual content.</p>
+
+        <div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut
+            enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </section>
+    <section class="s2">
+        <h2>Calculate the total width:</h2>
+
+        <img src="../imeges/klematis4_big.jpg" width="350" height="263" alt="Klematis">
+        <div>The picture above is 350px wide. The total width of this element is also 350px. The total height of this
+            element is 80px.</div>
+    </section>
+</body>
+
+</html>
