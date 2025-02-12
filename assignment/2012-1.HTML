@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="KO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제</title>
+    <style>
+        .ss1 p {
+            border: 2px solid black;
+            outline: #4CAF50 solid 10px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .ss2 p {
+            outline-color: red;
+        }
+
+        .ss2 p.dotted {
+            outline-style: dotted;
+        }
+
+        .ss2 p.dashed {
+            outline-style: dashed;
+        }
+
+        .ss2 p.solid {
+            outline-style: solid;
+        }
+
+        .ss2 p.double {
+            outline-style: double;
+        }
+
+        .ss2 p.groove {
+            outline-style: groove;
+        }
+
+        .ss2 p.ridge {
+            outline-style: ridge;
+        }
+
+        .ss2 p.inset {
+            outline-style: inset;
+        }
+
+        .ss2 p.outset {
+            outline-style: outset;
+        }
+
+        .s3>p.ex1 {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: red;
+            outline-width: thin;
+        }
+
+        .s3>p.ex2 {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: red;
+            outline-width: medium;
+        }
+
+        .s3>p.ex3 {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: red;
+            outline-width: thick;
+        }
+
+        .s3>p.ex4 {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: red;
+            outline-width: 4px;
+        }
+
+        .s4>p.ex1 {
+            border: 2px solid black;
+            outline-style: solid;
+            outline-color: red;
+        }
+
+        .s4>p.ex2 {
+            border: 2px solid black;
+            outline-style: dotted;
+            outline-color: blue;
+        }
+
+        .s4>p.ex3 {
+            border: 2px solid black;
+            outline-style: outset;
+            outline-color: grey;
+        }
+
+        .s5>p.ex1 {
+            border: 2px solid black;
+            outline-style: solid;
+            outline-color: #ff0000;
+            /* red */
+        }
+
+        .s5>p.ex2 {
+            border: 2px solid black;
+            outline-style: dotted;
+            outline-color: #0000ff;
+            /* blue */
+        }
+
+        .s5>p.ex3 {
+            border: 2px solid black;
+            outline-style: solid;
+            outline-color: #bbbbbb;
+            /* grey */
+        }
+
+        .s6>p.ex1 {
+            outline: dashed;
+        }
+
+        .s6>p.ex2 {
+            outline: dotted red;
+        }
+
+        .s6>p.ex3 {
+            outline: 5px solid yellow;
+        }
+
+        .s6>p.ex4 {
+            outline: thick ridge pink;
+        }
+
+        .s7>p {
+            margin: 30px;
+            border: 1px solid black;
+            outline: 1px solid red;
+            outline-offset: 15px;
+        }
+
+        .s8>p {
+            margin: 30px;
+            background: yellow;
+            border: 1px solid black;
+            outline: 1px solid red;
+            outline-offset: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="ss1">
+        <h2>CSS Outline</h2>
+        <p>This element has a 2px black border and a green outline with a width of 10px.</p>
+    </section>
+
+    <br>
+    <hr>
+
+    <section class="ss2">
+        <h2>The outline-style Property</h2>
+
+        <p class="dotted">A dotted outline</p>
+        <p class="dashed">A dashed outline</p>
+        <p class="solid">A solid outline</p>
+        <p class="double">A double outline</p>
+        <p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+        <p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+        <p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+        <p class="outset">An outset outline. The effect depends on the outline-color value.</p>
+    </section>
+    <section class="s3">
+        <section class="s3">
+            <h2>The outline-width Property</h2>
+
+            <p class="ex1">A thin outline.</p>
+            <p class="ex2">A medium outline.</p>
+            <p class="ex3">A thick outline.</p>
+            <p class="ex4">A 4px thick outline.</p>
+        </section>
+
+        <hr>
+        <br>
+
+        <section class="s4">
+            <h2>The outline-color Property</h2>
+            <p>The outline-color property is used to set the color of the outline.</p>
+
+            <p class="ex1">A solid red outline.</p>
+            <p class="ex2">A dotted blue outline.</p>
+            <p class="ex3">An outset grey outline.</p>
+        </section>
+
+        <hr>
+        <br>
+
+        <section class="s5">
+            <h2>The outline-color Property</h2>
+            <p>The color of the outline can also be specified using a hexadecimal value (HEX):</p>
+
+            <p class="ex1">A solid red outline.</p>
+            <p class="ex2">A dotted blue outline.</p>
+            <p class="ex3">A solid grey outline.</p>
+        </section>
+
+        <hr>
+        <br>
+
+        <section class="s6">
+            <h2>The outline Property</h2>
+
+            <p class="ex1">A dashed outline.</p>
+            <p class="ex2">A dotted red outline.</p>
+            <p class="ex3">A 5px solid yellow outline.</p>
+            <p class="ex4">A thick ridge pink outline.</p>
+
+        </section>
+
+        <hr>
+        <br>
+
+        <section class="s7">
+            <h2>The outline-offset Property</h2>
+
+            <p>This paragraph has an outline 15px outside the border edge.</p>
+        </section>
+
+        <hr>
+        <br>
+
+        <section class="s8">
+            <h2>The outline-offset Property</h2>
+
+            <p>This paragraph has an outline of 15px outside the border edge.</p>
+        </section>
+</body>
+
+</html>
