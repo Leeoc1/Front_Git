@@ -1,0 +1,282 @@
+section {
+  border: 2px solid rgb(229, 0, 236);
+  padding: 8px;
+  margin: 40px;
+  display: inline-block;
+}
+
+.s1 {
+}
+
+.s1 h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4caf50;
+}
+
+.s1 p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+.s1 a {
+  text-decoration: none;
+  color: #008cba;
+}
+
+.s2 {
+  color: blue;
+}
+
+.s2 h1 {
+  color: green;
+}
+
+.s3 {
+  background-color: lightgrey;
+  color: blue;
+}
+
+.s3 h1 {
+  background-color: black;
+  color: white;
+}
+
+.s3 div {
+  background-color: blue;
+  color: white;
+}
+
+.s4 h1 {
+  text-align: center;
+}
+
+.s4 h2 {
+  text-align: left;
+}
+
+.s4 h3 {
+  text-align: right;
+}
+
+.s5 div {
+  border: 1px solid black;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: justify;
+}
+
+.s6 p.a {
+  text-align-last: right;
+}
+
+.s6 p.b {
+  text-align-last: center;
+}
+
+.s6 p.c {
+  text-align-last: justify;
+}
+
+.s7 p.ex1 {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+img.a {
+  vertical-align: baseline;
+}
+
+img.b {
+  vertical-align: text-top;
+}
+
+img.c {
+  vertical-align: text-bottom;
+}
+
+img.d {
+  vertical-align: sub;
+}
+
+img.e {
+  vertical-align: super;
+}
+
+.s8 h1 {
+  text-decoration: overline;
+}
+
+.s8 h2 {
+  text-decoration: line-through;
+}
+
+.s8 h3 {
+  text-decoration: underline;
+}
+
+.s8 p.ex {
+  text-decoration: overline underline;
+}
+
+.s9 h1 {
+  text-decoration-line: overline;
+  text-decoration-color: red;
+}
+
+.s9 h2 {
+  text-decoration-line: line-through;
+  text-decoration-color: blue;
+}
+
+.s9 h3 {
+  text-decoration-line: underline;
+  text-decoration-color: green;
+}
+
+.s9 p {
+  text-decoration-line: overline underline;
+  text-decoration-color: purple;
+}
+
+.s10 h1 {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  /* this is default */
+}
+
+.s10 h2 {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+.s10 h3 {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+.s10 p.ex1 {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+}
+
+.s10 p.ex2 {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+.s10 p.ex3 {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+}
+
+.s11 h1 {
+  text-decoration-line: underline;
+  text-decoration-thickness: auto;
+  /* this is default */
+}
+
+.s11 h2 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+}
+
+.s11 h3 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 25%;
+}
+
+.s11 p {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: double;
+  text-decoration-thickness: 5px;
+}
+
+.s12 h1 {
+  text-decoration: underline;
+}
+
+.s12 h2 {
+  text-decoration: underline red;
+}
+
+.s12 h3 {
+  text-decoration: underline red double;
+}
+
+.s12 p {
+  text-decoration: underline red double 5px;
+}
+
+.s13 a {
+  text-decoration: none;
+}
+.s14 p.uppercase {
+  text-transform: uppercase;
+}
+
+.s14 p.lowercase {
+  text-transform: lowercase;
+}
+
+.s14 p.capitalize {
+  text-transform: capitalize;
+}
+.s15 p {
+  text-indent: 50px;
+}
+.s16 h2 {
+  letter-spacing: 5px;
+}
+
+.s16 h3 {
+  letter-spacing: -2px;
+}
+.s17 p.small {
+  line-height: 0.7;
+  color: red;
+}
+
+.s17 p.big {
+  line-height: 1.8;
+  color: blue;
+}
+.s18 p.one {
+  word-spacing: 10px;
+  color: red;
+}
+
+.s18 p.two {
+  word-spacing: -2px;
+  color: blue;
+}
+.s19 p {
+  white-space: nowrap;
+}
+.s20 .black {
+  text-shadow: 2px 2px;
+}
+.s20 .red {
+  text-shadow: 2px 2px red;
+}
+.s20 .blur {
+  text-shadow: 2px 2px 5px red;
+}
+.s20 .whi {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+.s20 .neon {
+  text-shadow: 0 0 3px #ff0000;
+}
+.s20 .gether {
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+.s20 .pret {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
