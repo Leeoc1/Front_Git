@@ -1,87 +1,49 @@
 section {
   border: 2px solid rgb(217, 16, 243);
   padding: 8px;
-  margin: 10px;
+  margin: 20px;
   display: inline-block;
 }
-.s1 .p1 {
-  font-family: "Times New Roman", Times, serif;
+.s1 {
+  background-color: blue;
 }
-
-.s1 .p2 {
-  font-family: Arial, Helvetica, sans-serif;
+.s1_1 {
+  background-color: white;
 }
-
-.s1 .p3 {
-  font-family: "Lucida Console", "Courier New", monospace;
+.s1_1 p {
+  line-height: 30px;
 }
-.s2 p {
-  font-family: Tahoma, Verdana, sans-serif;
+.s2 {
+  width: 300px;
+  padding: 35px;
+  background: skyblue;
+  margin: 20px;
+  border: 5px dotted #222;
+  background-clip: content-box;
 }
 .s3 {
-  font-family: Arial, sans-serif;
+  background-image: url(../imeges/bg1.png);
+  width: 200px;
+  height: 200px;
 }
 .s4 {
-  font-family: Verdana, sans-serif;
+  background: url(../imeges/bg4.jpg) no-repeat left top;
+  background-size: 100% 100%;
+  width: 200px;
+  height: 150px;
 }
 .s5 {
-  font-family: Tahoma, sans-serif;
+  background-image: url(../imeges/light.png);
+  background-repeat: no-repeat;
+  background-position: 5px 7px;
 }
-.s6 {
-  font-family: "Trebuchet MS", sans-serif;
-}
-.s7 {
-  font-family: "Times New Roman", serif;
-}
-.s8 {
-  font-family: Georgia, serif;
-  border: 2px solid rgb(241, 8, 20);
-  padding: 8px;
-  margin: 10px;
-  display: inline-block;
-}
-.s9 {
-  font-family: Garamond, serif;
-}
-.s10 {
-  font-family: "Courier New", monospace;
-}
-.s11 {
-  font-family: "Brush Script MT", cursive;
-}
-.s12 {
-  font-family: Copperplate, Papyrus, fantasy;
-}
-.s13 p.normal {
-  font-style: normal;
-}
-
-.s13 p.italic {
-  font-style: italic;
-}
-
-.s13 p.oblique {
-  font-style: oblique;
-}
-.s14 p.normal {
-  font-weight: normal;
-}
-
-.s14 p.light {
-  font-weight: lighter;
-}
-
-.s14 p.thick {
+.s5_1 {
+  left: 20%;
+  width: 140px;
+  height: 50px;
+  background-color: rgb(0, 110, 255);
+  border: 1px solid rgb(0, 110, 255);
+  border-radius: 8px;
+  color: #fff;
   font-weight: bold;
-}
-
-.s14 p.thicker {
-  font-weight: 900;
-}
-.s15 p.normal {
-  font-variant: normal;
-}
-
-.s15 p.small {
-  font-variant: small-caps;
 }
