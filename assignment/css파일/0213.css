@@ -66,6 +66,7 @@ section {
   width: 200px;
   height: 200px;
   text-align: justify;
+  overflow: auto;
 }
 
 .s6 p.a {
@@ -256,6 +257,13 @@ img.e {
 }
 .s19 p {
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 300px;
+  border: 1px solid black;
+}
+.s19 p:hover {
+  overflow: visible;
 }
 .s20 .black {
   text-shadow: 2px 2px;
