@@ -126,5 +126,348 @@ section {
 }
 .s8 > div {
   width: 500px;
+  height: 300px;
+}
+.s9 div {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+}
+.s9 .glad1 {
+  background: linear-gradient(to right bottom, blue, white);
+  background: blue; /* css3 미지원 브라우저 */
+  background: -webkit-linear-gradient(
+    left top,
+    blue,
+    white
+  ); /* 초기 모던 브라우저 */
+  background: -moz-linear-gradient(
+    right bottom,
+    blue,
+    white
+  ); /* 초기 모던 브라우저 */
+  background: -o-linear-gradient(
+    right bottom,
+    blue,
+    white
+  ); /* 초기 모던 브라우저 */
+}
+.s9 .glad2 {
+  background: #ff0000; /* CSS3 미지원 브라우저*/
+  background: -webkit-linear-gradient(
+    45deg,
+    #ff0000,
+    #ffffff
+  ); /* 초기 모던 브라우저 */
+  background: -moz-linear-gradient(
+    45deg,
+    #ff0000,
+    #ffffff
+  ); /* 초기 모던 브라우저 */
+  background: -o-linear-gradient(
+    45deg,
+    #ff0000,
+    #ffffff
+  ); /* 초기 모던 브라우저 */
+  background: linear-gradient(45deg, #ff0000, #ffffff); /* 최신 모던 브라우저 */
+}
+.s9 .glad3 {
+  background: #06f; /* css3 미지원 브라우저 */
+  background-image: -webkit-linear-gradient(
+    top,
+    #06f,
+    white 30%,
+    #06f
+  ); /* 초기 모던 브라우저 */
+  background-image: -moz-linear-gradient(
+    bottom,
+    #06f,
+    white 30%,
+    #06f
+  ); /* 초기 모던 브라우저 */
+  background: -o-linear-gradient(
+    bottom,
+    #06f,
+    white 30%,
+    #06f
+  ); /* 초기 모던 브라우저 */
+  background: linear-gradient(
+    to bottom,
+    #06f,
+    white 30%,
+    #06f
+  ); /* 최신 모던 브라우저 */
+}
+.s9 .glad4 {
+  background: red;
+  background: -webkit-radial-gradient(white, yellow, red);
+  background: -moz-radial-gradient(white, yellow, red);
+  background: -o-radial-gradient(white, yellow, red);
+  background: radial-gradient(white, yellow, red);
+}
+.s9 .glad5 {
+  background: red;
+  background: -webkit-radial-gradient(circle, white, yellow, red);
+  background: -moz-radial-gradient(circle, white, yellow, red);
+  background: -o-radial-gradient(circle, white, yellow, red);
+  background: radial-gradient(circle, white, yellow, red);
+}
+.s9 .glad6 {
+  background: blue;
+  background: -webkit-radial-gradient(10% 10%, circle, white, blue);
+  background: -moz-radial-gradient(10% 10%, circle, white, blue);
+  background: -o-radial-gradient(10% 10%, circle, white, blue);
+  background: radial-gradient(circle at 10% 10%, white, blue);
+}
+.s9 li {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  margin: 10px;
+}
+.s9 .glad7 {
+  background: darkgreen;
+  background: -webkit-radial-gradient(
+    30% 40%,
+    circle closest-side,
+    white,
+    yellow,
+    green
+  );
+  background: -moz-radial-gradient(
+    30% 40%,
+    circle closest-side,
+    white,
+    yellow,
+    green
+  );
+  background: -o-radial-gradient(
+    30% 40%,
+    circle closest-side,
+    white,
+    yellow,
+    green
+  );
+  background: radial-gradient(
+    circle closest-side at 30% 40%,
+    white,
+    yellow,
+    green
+  );
+}
+.s9 .glad8 {
+  background: darkgreen;
+  background: -webkit-radial-gradient(
+    30% 40%,
+    circle closest-corner,
+    white,
+    yellow,
+    green
+  );
+  background: -moz-radial-gradient(
+    30% 40%,
+    circle closest-corner,
+    white,
+    yellow,
+    green
+  );
+  background: -o-radial-gradient(
+    30% 40%,
+    circle closest-corner,
+    white,
+    yellow,
+    green
+  );
+  background: radial-gradient(
+    circle closest-corner at 30% 40%,
+    white,
+    yellow,
+    green
+  );
+}
+.s9 .glad9 {
+  background: darkgreen;
+  background: -webkit-radial-gradient(
+    30% 40%,
+    circle farthest-side,
+    white,
+    yellow,
+    green
+  );
+  background: -moz-radial-gradient(
+    30% 40%,
+    circle farthest-side,
+    white,
+    yellow,
+    green
+  );
+  background: -o-radial-gradient(
+    30% 40%,
+    circle farthest-side,
+    white,
+    yellow,
+    green
+  );
+  background: radial-gradient(
+    circle farthest-side at 30% 40%,
+    white,
+    yellow,
+    green
+  );
+}
+.s9 .glad10 {
+  background: darkgreen;
+  background: -webkit-radial-gradient(
+    30% 40%,
+    circle farthest-corner,
+    white,
+    yellow,
+    green
+  );
+  background: -moz-radial-gradient(
+    30% 40%,
+    circle farthest-corner,
+    white,
+    yellow,
+    green
+  );
+  background: -o-radial-gradient(
+    30% 40%,
+    circle farthest-corner,
+    white,
+    yellow,
+    green
+  );
+  background: radial-gradient(
+    circle farthest-corner at 30% 40%,
+    white,
+    yellow,
+    green
+  );
+}
+.s9 .glad11 {
+  background: skyblue;
+  background: -webkit-radial-gradient(red, yellow, skyblue);
+  background: -moz-radial-gradient(red, yellow, skyblue);
+  background: -o-radial-gradient(red, yellow, skyblue);
+  background: radial-gradient(red, yellow, skyblue);
+}
+.s9 .glad12 {
+  background: skyblue;
+  background: -webkit-radial-gradient(red, yellow 20%, skyblue);
+  background: -moz-radial-gradient(red, yellow 20%, skyblue);
+  background: -o-radial-gradient(red, yellow 20%, skyblue);
+  background: radial-gradient(red, yellow 20%, skyblue);
+}
+.s9 .glad13 {
+  background: red; /* css3 미지원 브라우저 */
+  background: -webkit-repeating-linear-gradient(
+    yellow,
+    red 20px
+  ); /* 초기 모던 브라우저 */
+  background: -moz-repeating-linear-gradient(
+    yellow,
+    red 20px
+  ); /* 초기 모던 브라우저 */
+  background: -o-repeating-linear-gradient(
+    yellow,
+    red 20px
+  ); /* 초기 모던 브라우저 */
+  background: repeating-linear-gradient(
+    yellow,
+    red 20px
+  ); /* 최신 모던 브라우저 */
+}
+.s9 .glad14 {
+  background: red; /* css3 미지원 브라우저 */
+  background: -webkit-repeating-linear-gradient(
+    yellow,
+    yellow 20px,
+    red 20px,
+    red 40px
+  ); /* 초기 모던 브라우저 */
+  background: -moz-repeating-linear-gradient(
+    yellow,
+    yellow 20px,
+    red 20px,
+    red 40px
+  ); /* 초기 모던 브라우저 */
+  background: -o-repeating-linear-gradient(
+    yellow,
+    yellow 20px,
+    red 20px,
+    red 40px
+  ); /* 초기 모던 브라우저 */
+  background: repeating-linear-gradient(
+    yellow,
+    yellow 20px,
+    red 20px,
+    red 40px
+  ); /* 최신 모던 브라우저 */
+}
+.s9 .glad15 {
+  background: linear-gradient(to bottom, green, white);
+  height: 500px;
+}
+.q1 {
+  font-family: "맑은 고딕", 돋움;
+}
+.q1 .container {
+  width: 500px;
+  padding: 10px;
+  border: 1px solid blue;
+  background-color: rgba(0, 0, 255, 0.2);
+}
+.q1 h1 {
+  font-size: 17px;
+}
+
+.q1 p {
+  font-size: 16px;
+  line-height: 25px;
+}
+.q2 {
+  font-family: "맑은 고딕", 돋움;
+}
+.q2 .container {
+  width: 500px;
+  padding: 10px;
+  border: 1px solid blue;
+  background: rgba(0, 0, 255, 0.2);
+}
+.q2 h1 {
+  font-size: 17px;
+}
+
+.q2 p {
+  font-size: 16px;
+  line-height: 25px;
+}
+.q2 .container:hover {
+  background-color: blue;
+  color: white;
+}
+.q3 {
+  font-family: "맑은 고딕", 돋움;
+}
+.q3 .container {
+  position: relative;
+  width: 600px;
   height: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background: url(../imeges/apple-bg.jpg) no-repeat;
+  background-size: cover;
+}
+.q3 .content {
+  position: absolute;
+  top: 300px;
+  width: 90%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.q3 h1 {
+  font-size: 30px;
+  text-align: center;
 }
