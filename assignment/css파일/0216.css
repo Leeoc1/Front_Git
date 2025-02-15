@@ -1,0 +1,358 @@
+section {
+  border: 2px solid rgb(204, 0, 255);
+  padding: 10px;
+  margin: 10px;
+  display: table;
+}
+.s2 .box1 {
+  width: 400px; /* 고정 너비 */
+  height: 100px; /* 높이 */
+  background: #ff6a00; /* 배경색 */
+}
+.s2 .box2 {
+  width: 50%; /* 가변 너비 - 브라우저 창 너비의 50% */
+  height: 100px; /* 높이 */
+  background: #0094ff; /* 배경색 */
+}
+.s2 div {
+  margin: 10px; /* div 간의 여백 */
+}
+.s3 div {
+  margin: 20px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+.s3 #inline img {
+  margin: 10px;
+}
+.s3 #block img {
+  display: block;
+  margin: 10px;
+}
+.s4 nav ul {
+  list-style-type: none;
+}
+.s4 nav ul li {
+  display: inline;
+  padding: 10px 15px;
+  margin-right: 20px;
+  border-top: 3px solid #222;
+}
+.s4 nav ul li:hover {
+  background-color: rgb(196, 196, 196);
+}
+.s4 nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+.s5 nav {
+  width: 100%;
+  height: 60px;
+  background-color: #069;
+}
+.s5 nav ul {
+  list-style-type: none;
+}
+.s5 nav ul li {
+  display: inline-block;
+  margin: 20px;
+}
+.s5 nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.s6 div {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  display: inline-block;
+}
+.s7 div {
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  margin: 15px;
+  border-width: 5px; /* 테두리 굵기 */
+}
+.s7 .box1 {
+  border-style: solid;
+}
+.s7 .box2 {
+  border-style: dotted;
+}
+.s7 .box3 {
+  border-style: dashed;
+}
+.s8 div {
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  margin: 15px;
+  border-style: dashed; /* 테두리 스타일 - 선으로 된 점선 */
+  border-width: 2px; /* 테두리 굵기 - 2px */
+}
+.s8 .box1 {
+  border-color: red;
+}
+.s8 .box2 {
+  border-color: blue;
+}
+.s9 h1 {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #ccc; /* 아랫 부분 - 3px짜리 회색 실선*/
+}
+.s9 p {
+  padding: 10px;
+  border: 3px dotted black; /* 모든 방향 - 3px짜리 검정 점선 */
+}
+.s10 div {
+  width: 300px; /* 너비 */
+  height: 200px; /* 높이 */
+  margin: 20px; /* 영역간 마진 */
+  display: inline-block; /* 가로로 배치 */
+}
+.s10 .round {
+  border: 2px solid red; /* 2px짜리 빨강 실선 */
+  border-radius: 20px; /* 모서리 20px 만큼 라운딩 */
+}
+.s10 #bg {
+  background: url(../imeges/pic1.jpg) no-repeat; /* 배경 이미지 */
+  background-size: cover; /* 영역을 다 채우게 */
+}
+.s11 div {
+  width: 250px;
+  height: 300px;
+  margin: 20px;
+  display: inline-block;
+  border: 2px solid; /* 2px짜리 실선, 기본색 검정 */
+  border-radius: 70px/40px; /* 네 방향 라운딩 - 가로 50x,  세로 20px */
+}
+.s11 .bg {
+  background: url(../imeges/pic2.jpg) no-repeat;
+  background-size: cover;
+}
+.s12 div {
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  margin: 15px;
+  border: 2px solid black;
+  background: #ffd800;
+}
+.s12 .round1 {
+  border-top-left-radius: 100px 50px;
+}
+.s12 .round2 {
+  border-bottom-right-radius: 50% 30%;
+}
+.s12 .round3 {
+  border-top-right-radius: 50px;
+}
+.s13 div {
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  margin: 15px;
+  border: 2px solid;
+  border-radius: 20px;
+}
+.s13 .box1 {
+  box-shadow: 2px -2px 5px 0px black;
+}
+.s13 .box2 {
+  box-shadow: 5px 5px 15px 5px gray;
+}
+.s14 div {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  border-radius: 50%;
+  border: 3px solid red;
+}
+.s15 div {
+  width: 200px; /* 너비 */
+  height: 100px; /* 높이 */
+  background: #0094ff; /* 배경색 */
+}
+.s15 .box1 {
+  margin: 30px 50px 30px 50px;
+}
+.s15 .box2 {
+  margin: 30px 50px;
+}
+.s15 .box3 {
+  margin: 50px;
+}
+.s15 .box4 {
+  margin: 30px 5px 10px;
+}
+.s16 {
+  display: block;
+}
+.s16 .box {
+  width: 200px; /* 너비 */
+  height: 300px; /* 높이 */
+  background: #ff6a00; /* 배경색 */
+  margin: 0 auto; /* 마진 - 0 auto 0 auto */
+}
+.s17 div {
+  width: 200px; /* 너비 */
+  height: 100px; /* 높이 */
+  margin: 30px; /* 마진 */
+}
+.s17 #box1 {
+  background: rgb(0, 77, 243);
+}
+.s17 #box2 {
+  background: rgb(255, 72, 0);
+}
+.s17 #box3 {
+  background: rgb(18, 219, 0);
+}
+.s17 {
+  padding: 0;
+}
+.s18 div {
+  width: 200px; /* 너비 */
+  height: 100px; /* 높이 */
+  margin: 30px; /* 마진 */
+  display: inline-block; /* 가로로 배치 */
+}
+.s18 #box1 {
+  background: rgb(0, 77, 243);
+}
+.s18 #box2 {
+  background: rgb(255, 72, 0);
+}
+.s18 #box3 {
+  background: rgb(18, 219, 0);
+}
+.s18 {
+  padding: 0;
+}
+.s19 div {
+  width: 200px; /* 너비 */
+  height: auto; /* 높이 */
+  background: #0094ff; /* 배경색 */
+  display: inline-block; /* 가로로 배치 */
+  margin: 15px; /* 마진 - 15px 15px 15px 15px */
+  color: white; /* 글자색 */
+}
+.s19 .box1 {
+  padding: 10px 30px 10px 30px;
+}
+.s19 .box2 {
+  padding: 10px 30px;
+}
+.s19 .box3 {
+  padding: 10px;
+}
+.s20 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+.s20 header {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #069;
+  padding: 10px;
+  overflow: hidden;
+}
+.s20 header h1 {
+  width: 40%;
+  float: left;
+  color: #fff;
+}
+.s20 header nav {
+  width: 60%;
+  float: right;
+}
+.s20 nav ul {
+  list-style-type: none;
+}
+.s20 nav ul li {
+  display: inline;
+  float: left;
+  margin: 15px;
+}
+.s20 nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.s20 p {
+  font-size: 15px;
+  line-height: 20px;
+}
+.s20 dt {
+  font-weight: bold;
+  color: purple;
+}
+.s20 h1 {
+  font-size: 2em;
+}
+.s20 section {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 5px solid #333;
+  padding: 5px;
+  overflow: hidden;
+}
+.s20 article h3 {
+  background-image: url(../imeges/bg.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 30px;
+}
+.s20 aside {
+  clear: both;
+  height: auto;
+  padding: 10px;
+}
+.s20 footer {
+  clear: both;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+.s20 article {
+  width: 90%;
+  height: auto;
+  margin: 20px 10px;
+  padding: 20px;
+}
+.s20 #pet1 {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.s20 #pet2 {
+  border: 1px dotted blue;
+  border-radius: 20px;
+}
+.s20 #pet3 {
+  border: 2px double green;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.q1 {
+  width: 300px;
+  height: 200px;
+  border-width: 5px 20px 10px 15px;
+}
+.q2 a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+.q2 ul li {
+  display: inline-block;
+  border: 1px solid black;
+  list-style-type: none;
+  padding: 10px 20px;
+  margin: 10px;
+}
