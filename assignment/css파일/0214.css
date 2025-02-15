@@ -1,0 +1,265 @@
+section {
+  border: 2px solid rgb(204, 0, 255);
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+.s1 .p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.s1 .p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.s1 .p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+.s2 p {
+  font-family: Tahoma, Verdana, sans-serif;
+}
+.s3 {
+  font-family: Arial, sans-serif;
+}
+.s4 {
+  font-family: Verdana, sans-serif;
+}
+.s5 {
+  font-family: Tahoma, sans-serif;
+}
+.s6 {
+  font-family: "Trebuchet MS", sans-serif;
+}
+.s7 {
+  font-family: "Times New Roman", serif;
+}
+.s8 {
+  font-family: Georgia, serif;
+}
+.s9 {
+  font-family: Garamond, serif;
+}
+.s10 {
+  font-family: "Courier New", monospace;
+}
+.s11 {
+  font-family: "Brush Script MT", cursive;
+}
+.s12 {
+  font-family: "Times New Roman", Times, serif;
+}
+.s13 {
+  font-family: Georgia, serif;
+}
+.s14 {
+  font-family: Garamond, serif;
+}
+.s15 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.s16 {
+  font-family: Tahoma, Verdana, sans-serif;
+}
+.s17 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.s18 {
+  font-family: Geneva, Verdana, sans-serif;
+}
+.s19 {
+  font-family: "Courier New", Courier, monospace;
+}
+.s20 {
+  font-family: "Brush Script MT", cursive;
+}
+.s21 {
+  font-family: Copperplate, Papyrus, fantasy;
+}
+.s22 p.normal {
+  font-style: normal;
+}
+.s22 p.italic {
+  font-style: italic;
+}
+.s22 p.oblique {
+  font-style: oblique;
+}
+.s23 p.normal {
+  font-weight: normal;
+}
+.s23 p.light {
+  font-weight: lighter;
+}
+.s23 p.thick {
+  font-weight: bold;
+}
+.s23 p.thicker {
+  font-weight: 900;
+}
+.s24 p.normal {
+  font-variant: normal;
+}
+.s24 p.small {
+  font-variant: small-caps;
+}
+.s25 h1 {
+  font-size: 40px;
+}
+.s25 h2 {
+  font-size: 30px;
+}
+.s25 p {
+  font-size: 14px;
+}
+.s26 h1 {
+  font-size: 2.5em; /* 40px/16=2.5em */
+}
+.s26 h2 {
+  font-size: 1.875em; /* 30px/16=1.875em */
+}
+.s26 p {
+  font-size: 0.875em; /* 14px/16=0.875em */
+}
+.s27 {
+  font-size: 100%;
+}
+.s27 h1 {
+  font-size: 2.5em;
+}
+.s27 h2 {
+  font-size: 1.875em;
+}
+.s27 p {
+  font-size: 0.875em;
+}
+
+.s29 {
+  font-family: "Sofia", sans-serif;
+}
+.s30 {
+  font-family: "Trirong", serif;
+}
+.s31 {
+  font-family: "Audiowide", sans-serif;
+}
+.s32 h1.a {
+  font-family: "Audiowide", sans-serif;
+}
+.s32 h1.b {
+  font-family: "Sofia", sans-serif;
+}
+.s32 h1.c {
+  font-family: "Trirong", serif;
+}
+.s33 {
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px #ababab;
+}
+.s34 {
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+}
+.s35 {
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+}
+.s36 {
+  background-color: black;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  color: gray;
+}
+.s36 h1 {
+  font-family: Georgia, serif;
+  font-size: 60px;
+  color: white;
+}
+.s37 {
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+}
+
+.s37 h1 {
+  font-family: Georgia, serif;
+  font-size: 46px;
+}
+.s38 {
+  font-family: Garamond, serif;
+  font-size: 16px;
+}
+
+.s38 h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 46px;
+}
+.s39 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+.s39 h1 {
+  font-family: Merriweather, serif;
+  font-size: 46px;
+}
+.s40 {
+  font-family: Lora, serif;
+  font-size: 16px;
+}
+.s40 h1 {
+  font-family: Ubuntu, sans-serif;
+  font-size: 46px;
+}
+.s41 {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+}
+.s41 h1 {
+  font-family: "Abril Fatface", serif;
+  font-size: 46px;
+}
+.s42 {
+  font-family: "Fauna One", serif;
+  font-size: 16px;
+}
+.s42 h1 {
+  font-family: Cinzel, serif;
+  font-size: 46px;
+}
+.s43 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 16px;
+}
+.s43 h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 46px;
+}
+.s44 {
+  font-family: Muli, sans-serif;
+  font-size: 16px;
+}
+.s44 h1 {
+  font-family: "Space Mono", monospace;
+  font-size: 46px;
+}
+.s45 {
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+}
+.s45 h1 {
+  font-family: Spectral, serif;
+  font-size: 46px;
+}
+.s46 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+}
+.s46 h1 {
+  font-family: Oswald, sans-serif;
+  font-size: 46px;
+}
+.s47 p.a {
+  font: 20px Arial, sans-serif;
+}
+.s47 p.b {
+  font: italic small-caps bold 12px/30px Georgia, serif;
+}
