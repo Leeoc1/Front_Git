@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="./css파일/0217_2.css">
+    <script src="./js파일/0217_2.js"></script>
+</head>
+
+<body>
+    <section class="s1">
+        <p>Display a list of links as a horizontal menu:</p>
+
+        <ul>
+            <li><a href="/html/default.asp" target="_blank">HTML</a></li>
+            <li><a href="/css/default.asp" target="_blank">CSS</a></li>
+            <li><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+        </ul>
+    </section>
+    <section class="s2">
+        <h1>Display span elements as block elements</h1>
+
+        <span>A display property with</span> <span>a value of "block" results in</span> <span>a line break between each
+            span elements.</span>
+    </section>
+    <section class="s3">
+        <h1>Display links as block elements</h1>
+
+        <a href="/html/default.asp" target="_blank">HTML</a>
+        <a href="/css/default.asp" target="_blank">CSS</a>
+        <a href="/js/default.asp" target="_blank">JavaScript</a>
+    </section>
+    <section class="s4">
+        <h1>This is a visible heading</h1>
+        <h1 class="hidden">This is a hidden heading</h1>
+        <p>Notice that the h1 element with display: none; does not take up any space.</p>
+    </section>
+    <section class="s5">
+        <h1>This is a visible heading</h1>
+        <h1 class="hidden">This is a hidden heading</h1>
+        <p>Notice that the hidden heading still takes up space.</p>
+    </section>
+    <section class="s6">
+        <h1>The display Property</h1>
+
+        <h2>display: none:</h2>
+        <p class="ex1">
+            <span>Text 1</span>
+            <span>Text 2</span>
+            <span>Text 3</span>
+        </p>
+
+        <h2>display: inline:</h2>
+        <p class="ex2">
+            <span>Text 1</span>
+            <span>Text 2</span>
+            <span>Text 3</span>
+        </p>
+
+        <h2>display: block:</h2>
+        <p class="ex3">
+            <span>Text 1</span>
+            <span>Text 2</span>
+            <span>Text 3</span>
+        </p>
+
+        <h2>display: inline-block:</h2>
+        <p class="ex4">
+            <span>Text 1</span>
+            <span>Text 2</span>
+            <span>Text 3</span>
+        </p>
+
+        <h2>display: flex:</h2>
+        <p class="ex5">
+            <span>Text 1</span>
+            <span>Text 2</span>
+            <span>Text 3</span>
+        </p>
+
+        <h2>display: grid:</h2>
+        <p class="ex6">
+            <span>Text 1</span>
+            <span>Text 2</span>
+            <span>Text 3</span>
+        </p>
+    </section>
+    <section class="s7">
+        <p class="flip" onclick="myFunction()">Click to show panel</p>
+
+        <div id="panel">
+            <p>This panel contains a div element, which is hidden by default (display: none).</p>
+            <p>It is styled with CSS and we use JavaScript to show it (display: block).</p>
+            <p>How it works: Notice that the p element with class="flip" has an onclick attribute attached to it. When
+                the user clicks on the p element, a function called myFunction() is executed, which changes the style of
+                the div with id="panel" from display:none (hidden) to display:block (visible).</p>
+            <p>You will learn more about JavaScript in our JavaScript Tutorial.</p>
+        </div>
+        <section class="s8">
+            <h3>Difference between display:none and visiblity: hidden</h3>
+            <p><strong>visibility:hidden</strong> hides the element, but it still takes up space in the layout.</p>
+            <p><strong>display:none</strong> removes the element from the document. It does not take up any space.</p>
+
+            <div class="imgbox" id="imgbox1">Box 1<br>
+                <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Italy" style="width:100%">
+                <button onclick="removeElement()">Remove</button>
+            </div>
+
+            <div class="imgbox" id="imgbox2">Box 2<br>
+                <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Lights" style="width:100%">
+                <button onclick="changeVisibility()">Hide</button>
+            </div>
+
+            <div class="imgbox">Box 3<br>
+                <img src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" style="width:100%">
+                <button onclick="resetElement()">Reset All</button>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>

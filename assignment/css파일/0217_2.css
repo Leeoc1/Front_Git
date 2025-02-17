@@ -1,0 +1,73 @@
+section {
+  border: 2px solid rgb(255, 0, 191);
+  display: table;
+  padding: 10px;
+  margin: 10px;
+}
+.s1 li {
+  display: inline;
+}
+.s2 span {
+  display: block;
+}
+.s3 a {
+  display: block;
+}
+.s4 h1.hidden {
+  display: none;
+}
+.s5 h1.hidden {
+  visibility: hidden;
+}
+.s6 p {
+  background-color: blue;
+  padding: 10px;
+}
+.s6 span {
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+
+.s6 p.ex1 {
+  display: none;
+}
+.s6 p.ex2 {
+  display: inline;
+}
+.s6 p.ex3 {
+  display: block;
+}
+.s6 p.ex4 {
+  display: inline-block;
+}
+.s6 p.ex5 {
+  display: flex;
+}
+.s6 p.ex6 {
+  display: grid;
+}
+.s7 #panel,
+.flip {
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+  border: solid 1px #a6d8a8;
+  margin: auto;
+}
+.s7 #panel {
+  display: none;
+}
+.s8 .imgbox {
+  float: left;
+  text-align: center;
+  width: 120px;
+  border: 1px solid gray;
+  margin: 4px;
+  padding: 6px;
+}
+.s8 button {
+  width: 100%;
+}
