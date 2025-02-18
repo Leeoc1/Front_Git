@@ -1,6 +1,6 @@
-const element = document.getElementById("intro");
+const d0 = document.getElementById("q1").querySelector("#intro");
 document.getElementById("demo").innerHTML =
-  "The text from the intro paragraph is: " + element.innerHTML;
+  "The text from the intro paragraph is: " + d0.innerHTML;
 
 const d1 = document.getElementById("q2");
 const element1 = d1.getElementsByTagName("p");
