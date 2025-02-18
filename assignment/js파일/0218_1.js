@@ -12,11 +12,11 @@ const element2 = d2.getElementsByTagName("p");
 document.getElementById("demo3").innerHTML =
   'The first paragraph (index 0) inside "main" is: ' + element2[0].innerHTML;
 
-const d3 = document.getElementsByClassName("intro");
+const d3 = document.getElementById("q4").getElementsByClassName("intro");
 document.getElementById("demo4").innerHTML =
   'The first paragraph (index 0) with class="intro" is: ' + d3[0].innerHTML;
 
-const d4 = document.querySelectorAll("p.intro2");
+const d4 = document.querySelectorAll("p.intro");
 document.getElementById("demo5").innerHTML =
   'The first paragraph (index 0) with class="intro" is: ' + d4[0].innerHTML;
 
