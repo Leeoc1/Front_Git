@@ -57,7 +57,9 @@ var b = 3;
 var height = 180;
 var weight = 74;
 
-var name = prompt("성함을 적어주세요", "");
-var height = prompt("키를 적어주세요", "");
-var weight = prompt("몸무게를 적어주세요", "");
-var normal_w = (height - 100) * 0.9;
+// var name = prompt("성함을 적어주세요", "");
+// var height = prompt("키를 적어주세요", "");
+// var weight = prompt("몸무게를 적어주세요", "");
+// var normal_w = (height - 100) * 0.9;
+
+// var walk = prompt("오늘 얼마나 걸었나요", "0");

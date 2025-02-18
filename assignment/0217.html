@@ -84,9 +84,45 @@
         document.write(result, "<br>");
         document.write("<br>");
 
-        var result = weight >= normal_w - 5 && weight <= normal_w + 5;
-        result = result ? "적정 체중입니다." : "적정 체중이 아닙니다.";
-        document.write(name + "님 " + result, "<br>")
+        // var result = weight >= normal_w - 5 && weight <= normal_w + 5;
+        // result = result ? "적정 체중입니다." : "적정 체중이 아닙니다.";
+        // document.write(name + "님 " + result, "<br>")
+        var price1 = 3000;
+        var price2 = 6000;
+        var price3 = 3000;
+        var total = (price1 + price2 + price3);
+        var over = total - 10000;
+        var result7 = total < 10000 ? "참 잘했어요." : over + "원 초과";
+
+        document.write(result7, "<br>");
+        document.write("<br>");
+
+        // var ques = prompt("4분기 판매량을 입력해주세요", "0");
+        // var aver = (1200 + 1300 + 1000) / 3;
+        // var result8 = ques > aver ? "판매량이 평균 이상입니다." : "판매량이 평균 미달입니다.";
+        // confirm(result8)
+
+        var num3 = 10;
+        if (num3 < 500) { document.write("큼", "<br>"); }
+
+        if ((walk) => 10000) {
+            document.write("만보 이상", "<br>");
+        }
+        document.write("=========end=========");
+
+        var id = "lch5752";
+        var pw = "5752";
+
+        var user_id = prompt("아이디를 입력해주세요");
+        var user_pw = prompt("비밀번호를 입력해주세요");
+        if (id == user_id) {
+            if (id != user_pw) {
+                alert("아이디가 일치하지 않습니다.");
+                location.reload()
+            }
+            if (pw == user_pw) { alert(`${id}님 환영합니다.`); }
+        }
+
     </script>
 </body>
 
