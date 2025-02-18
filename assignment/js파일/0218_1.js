@@ -16,7 +16,7 @@ const d3 = document.getElementById("q4").getElementsByClassName("intro");
 document.getElementById("demo4").innerHTML =
   'The first paragraph (index 0) with class="intro" is: ' + d3[0].innerHTML;
 
-const d4 = document.querySelectorAll("p.intro");
+const d4 = document.getElementById("q5").querySelectorAll("p.intro");
 document.getElementById("demo5").innerHTML =
   'The first paragraph (index 0) with class="intro" is: ' + d4[0].innerHTML;
 
