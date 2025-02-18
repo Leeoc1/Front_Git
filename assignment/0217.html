@@ -108,21 +108,42 @@
         if ((walk) => 10000) {
             document.write("만보 이상", "<br>");
         }
-        document.write("=========end=========");
+        document.write("=========end=========", "<br>");
+        document.write("<br>");
 
-        var id = "lch5752";
-        var pw = "5752";
 
-        var user_id = prompt("아이디를 입력해주세요");
-        var user_pw = prompt("비밀번호를 입력해주세요");
-        if (id == user_id) {
-            if (id != user_pw) {
-                alert("아이디가 일치하지 않습니다.");
-                location.reload()
-            }
-            if (pw == user_pw) { alert(`${id}님 환영합니다.`); }
+        // var id = "lch5752";
+        // var pw = "5752";
+
+        // // 로그인 기능
+        // var user_id = prompt("아이디를 입력해주세요");
+        // if (id != user_id) {
+        //     alert("아이디가 일치하지 않습니다.");
+        //     location.reload();
+        // }
+        // if (id == user_id) {
+        //     var user_pw = prompt("비밀번호를 입력해주세요");
+        //     if (pw == user_pw) {
+        //         alert(`${id}님 환영합니다.`);
+        //     } else {
+        //         alert("비밀번호가 일치하지 않습니다.");
+        //         location.reload();
+        //     }
+        // }
+
+        let num4 = 10;
+        let user = "홍길동";
+
+        if (num4 > 5) {
+            let num4 = 50;
+            num4 = num4 + 10;
         }
+        document.write(`${num4} <br>`);
 
+        if (user != "") {
+            let user = "김동"
+        }
+        document.write(`${user} <br>`)
     </script>
 </body>
 
