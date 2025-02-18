@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 요소</title>
+    <script src="./js파일/0218_1.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <h2>1. JavaScript HTML DOM</h2>
+
+        <p id="intro">Finding HTML Elements by Id</p>
+        <p>This example demonstrates the <b>getElementsById</b> method.</p>
+        <p id="demo"></p>
+    </div>
+    <div id="q2">
+        <h2>2. JavaScript HTML DOM</h2>
+
+        <p>Finding HTML Elements by Tag Name.</p>
+        <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+        <p id="demo1"></p>
+    </div>
+    <div id="q3">
+        <h2>3. JavaScript HTML DOM</h2>
+
+        <p>Finding HTML Elements by Tag Name</p>
+        <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+        <p id="demo3"></p>
+    </div>
+    <div id="q4">
+        <h2>4. JavaScript HTML DOM</h2>
+
+        <p>Finding HTML Elements by Class Name.</p>
+        <p class="intro">Hello World!</p>
+        <p class="intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+
+        <p id="demo4"></p>
+    </div>
+    <div>
+        <h2>5. JavaScript HTML DOM</h2>
+
+        <p>Finding HTML Elements by Query Selector</p>
+        <p class="intro2">Hello World!.</p>
+        <p class="intro2">This example demonstrates the <b>querySelectorAll</b> method.</p>
+
+        <p id="demo5"></p>
+    </div>
+    <div>
+        <h2>6. JavaScript HTML DOM</h2>
+        <p>Finding HTML Elements Using <b>document.forms</b>.</p>
+
+        <form id="frm1" action="/action_page.php">
+            First name: <input type="text" name="fname" value="Donald"><br>
+            Last name: <input type="text" name="lname" value="Duck"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <p>These are the values of each element in the form:</p>
+
+        <p id="demo6"></p>
+    </div>
+    <div>
+        <h2>JavaScript can Change HTML</h2>
+
+        <p id="p1">Hello World!</p>
+        <p>The paragraph above was changed by a script.</p>
+    </div>
+    <div>
+        <h1 id="id01">Old Heading</h1>
+        <p>JavaScript changed "Old Heading" to "New Heading".</p>
+    </div>
+    <div>
+        <h2>JavaScript HTML DOM</h2>
+        <img id="image" src="./imeges/bg1.png" width="160" height="120">
+        <p>The original image was smiley.gif, but the script changed it to landscape.jpg</p>
+    </div>
+    <div>
+        <p id="demo7"></p>
+    </div>
+    <div>
+        <p>Bla, bla, bla</p>
+
+        <script>
+            document.write(Date());
+        </script>
+
+        <p>Bla, bla, bla</p>
+    </div>
+</body>
+
+</html>
