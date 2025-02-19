@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3</title>
+    <script src="./js파일/0219_1.js" defer></script>
+</head>
+
+<body onload="checkCookies()">
+    <!-- 예제 1 -->
+    <div id="c1">
+        <h2>JavaScript Validation</h2>
+
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            Name: <input type="text" name="fname">
+            <input type="submit">
+        </form>
+    </div>
+    <br>
+    <!-- 예제 2 -->
+    <div id="c2">
+        <h2>JavaScript Validation</h2>
+
+        <p>1~10까지의 숫자만 입력</p>
+
+        <input id="numb">
+
+        <button type="button" onclick="myFunction()">Submit</button>
+
+        <p id="demo1"></p>
+    </div>
+    <br>
+    <!-- 예제 3 -->
+    <div id="c3">
+        <h2>JavaScript Validation</h2>
+
+        <form action="/action_page.php" method="post">
+            <input type="text" name="fname1" required>
+            <input type="submit" value="Submit">
+        </form>
+
+        <p>브라우저 기본기능으로 필수 입력 제공</p>
+    </div>
+    <br>
+    <!-- 예제 4 -->
+    <div id="c4">
+        <h1>자바스크립트 이벤트</h1>
+        <h2>onclick 속성</h2>
+
+        <h2 onclick="this.innerHTML='지리노!'">눌러!</h2>
+    </div>
+    <br>
+    <!-- 예제 5 -->
+    <div id="c5">
+        <h1>자바스크립트 이벤트2</h1>
+        <h2>onclick 속성2</h2>
+
+        <h2 onclick="changeText(this)">눌러!</h2>
+    </div>
+    <br>
+    <!-- 예제 6 -->
+    <div id="c6">
+        <p>클릭하면 시간을 나타내는 함수 호출</p>
+        <button onclick="displayDate()">지금 시간은?</button>
+        <p id="demo2"></p>
+    </div>
+    <br>
+    <!-- 예제 7 -->
+    <div id="c7">
+        <h2>The onclick Events</h2>
+        <p>클릭하면 시간을 나타내는 함수 호출2</p>
+        <button id="myBtn">지금 시간은?</button>
+
+        <p id="demo3"></p>
+    </div>
+    <br>
+    <!-- 예제 8 body 태그에 onload 사용-->
+    <div id="c8">
+        <h2>The onload Attribute</h2>
+        <p id="demo4"></p>
+    </div>
+    <br>
+    <!-- 예제 9 -->
+    <div id="c9">
+        <h2>oninput= 입력과 동시에 대문자로 변경하는 속성</h2>
+        영어 입력: <input type="text" id="fname1" oninput="upperCase()">
+    </div>
+    <br>
+    <!-- 예제 10 -->
+    <div id="c10">
+        <h2>onchange= 입력값을 벗어났을때 대문자 실행</h2>
+        영어 입력: <input type="text" id="fname2" onchange="upperCase2()">
+    </div>
+    <br>
+    <!-- 예제 11 -->
+    <div id="c11">
+        <h2>onmouseover=마우스 올릴때,onmouseout=마우스 뗏을때</h2>
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+            style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+            Mouse Over Me</div>
+    </div>
+    <br>
+    <!-- 예제 12 -->
+    <div id="c12">
+        <h2>onmousedown= 클릭할때,
+            onmouseup= 클릭을 놓았을때</h2>
+        <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+            style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+            Click Me</div>
+
+    </div>
+</body>
+
+
+</html>
