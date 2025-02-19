@@ -36,6 +36,9 @@ function checkCookies() {
   let text2 = "";
   if (navigator.cookieEnabled == true) {
     text2 = "Cookies are enabled.";
+    let myCookie = "name=skc";
+    document.cookie = myCookie;
+    console.log(document.cookie);
   } else {
     text2 = "Cookies are not enabled.";
   }
