@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset="UTF-8">
-<title> while문 </title>
-<style>
-	*{margin: 0;}
-	.blue{color: #00f;}
-	.red{color: #f00;}
-</style>
-<script>
-	var i = 20;
-	while( i >= 10 ){
-		if( i % 2 == 0 ){
-			document.write("<p class='blue'>" + i + "</p>");
-		}else{
-			document.write("<p class='red'>" + i + "</p>");
+	<meta charset="UTF-8">
+	<title> while문 </title>
+	<style>
+		* {
+			margin: 0;
 		}
-		i--;
-}
-</script>
+
+		.blue {
+			color: #00f;
+		}
+
+		.red {
+			color: #f00;
+		}
+	</style>
+	<script>
+		var i = 20;
+		while (i >= 10) {
+			if (i % 2 == 0) {
+				document.write("<p class='blue'>" + i + "</p>");
+			} else {
+				document.write("<p class='red'>" + i + "</p>");
+			}
+			i--;
+		}
+	</script>
 </head>
+
 <body>
 </body>
+
 </html>
