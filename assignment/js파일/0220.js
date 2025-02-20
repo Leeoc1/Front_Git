@@ -70,3 +70,43 @@ for (var i6 = 1; i6 <= 100; i6++) {
       "<span class='aqua'>" + i6 + "</span><br>";
   }
 }
+
+for (var i7 = 1; i7 <= 10; i7++) {
+  if (i7 == 6) break;
+  document.querySelector("#s8").innerHTML += i7 + "<br>";
+}
+document.querySelector("#s8").innerHTML += "====end====" + "<br>";
+
+for (let i8 = 1; i8 <= 10; i8++) {
+  if (i8 % 2 == 0) continue;
+  document.querySelector("#s9").innerHTML += i8 + "<br>";
+}
+document.querySelector("#s9").innerHTML += "====end====" + "<br>";
+
+for (let q = 1; q <= 3; q++) {
+  for (let w = 1; w <= 2; w++) {
+    document.querySelector("#s10").innerHTML += q + "행" + w + "열" + "<br>";
+  }
+  document.querySelector("#s10").innerHTML += "<br>";
+}
+
+let x5 = 1;
+while (x5 <= 9) {
+  document.querySelector("#q1").innerHTML +=
+    "5 x " + x5 + "= " + x5 * 5 + "<br>";
+  x5++;
+}
+
+var num = 1;
+var t = "<table border='1'>";
+for (var z = 1; z <= 5; z++) {
+  t += "<tr>";
+  for (var k = 1; k <= 5; k++) {
+    t += "<td>" + num + "</td>";
+    num++;
+  }
+  t += "</tr>";
+}
+t += "</table>";
+
+document.getElementById("q2").innerHTML = t;
