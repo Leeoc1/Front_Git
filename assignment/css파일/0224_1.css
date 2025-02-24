@@ -1,0 +1,538 @@
+section {
+  display: table;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid rgb(0, 143, 31);
+}
+
+/* --------------------------------------------------- */
+
+.box1 {
+  box-sizing: content-box;
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+  padding: 30px;
+  border: 2px solid red;
+}
+.box2 {
+  box-sizing: border-box;
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+  padding: 30px;
+  border: 2px solid red;
+}
+
+/* ---------------------------------------- */
+
+.cover_img {
+  float: left;
+  margin-right: 25px;
+}
+
+/* ---------------------------------------- */
+
+.box3 {
+  padding: 20px;
+  margin-right: 10px;
+  background: #ffd800;
+  float: left;
+}
+.box4 {
+  background: #0094ff;
+  padding: 20px;
+  margin-right: 10px;
+  float: left;
+}
+.box5 {
+  background: #00ff21;
+  padding: 20px;
+  float: left;
+}
+.box6 {
+  background: #ffffff;
+  padding: 20px;
+  float: right;
+  border: 1px solid black;
+}
+
+/* ---------------------------------------- */
+
+.box7 {
+  background: #ffd800;
+  float: left;
+}
+.box8 {
+  background: #0094ff;
+  float: left;
+}
+.box9 {
+  background: #00ff21;
+}
+.box10 {
+  background: #a874ff;
+  clear: both;
+}
+
+#c4 {
+  width: 90%;
+}
+
+#c4 div {
+  padding: 20px;
+  margin: 10px;
+}
+
+/* --------------------------------------------------- */
+
+#c5 div {
+  border: 1px solid #ccc;
+}
+#c5 #container {
+  width: 960px;
+  padding: 20px;
+  margin: 0 auto;
+}
+#c5 #header {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#c5 #contents {
+  width: 490px;
+  float: left;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+#c5 #left_sidebar {
+  width: 150px;
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 20px;
+}
+#c5 #right_sidebar {
+  width: 150px;
+  float: right;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+#c5 #footer {
+  clear: both;
+  padding: 20px;
+}
+
+/* --------------------------------------------------------- */
+
+.box11 {
+  float: left;
+  width: 100px;
+  background: #ffd800;
+  margin-right: 10px;
+  padding: 20px;
+}
+.box12 {
+  position: relative;
+  left: -50px;
+  top: 30px;
+  width: 300px;
+  background: #0094ff;
+  float: left;
+  padding: 20px;
+}
+
+/* -------------------------------------------------------------- */
+
+#wrap {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #ccc;
+}
+.box {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #0094ff;
+}
+#crd1 {
+  top: 0;
+  left: 0;
+}
+#crd2 {
+  top: 0;
+  right: 0;
+}
+#crd3 {
+  bottom: 0;
+  left: 0;
+}
+#crd4 {
+  bottom: 0;
+  right: 0;
+}
+#crd5 {
+  top: 100px;
+  left: 100px;
+}
+
+/* ------------------------------------------------------------------ */
+
+#fx {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  background: #ff6a00;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#content1 {
+  width: 400px;
+}
+
+#content1 p {
+  line-height: 30px;
+}
+
+/* ------------------------------------------------------------------------- */
+
+#c9 img {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid black;
+}
+.invisible {
+  visibility: hidden;
+}
+
+/* ------------------------------------------------------------------------- */
+
+div#wrapper {
+  position: relative;
+}
+.box13 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 26px;
+}
+#b1 {
+  left: 50px;
+  top: 50px;
+  background: #ff0000;
+  z-index: 1;
+}
+#b2 {
+  left: 110px;
+  top: 70px;
+  background: #ffd800;
+  z-index: 3;
+}
+#b3 {
+  left: 70px;
+  top: 110px;
+  background: #0094ff;
+  z-index: 1;
+}
+
+/* --------------------------------------------------------------- */
+
+.box14 {
+  width: 30px;
+  float: left;
+  border: 1px solid black;
+  height: 20px;
+  margin: 5px;
+}
+.box15 {
+  width: 60px;
+  float: left;
+  border: 1px solid black;
+  height: 20px;
+  margin: 5px;
+}
+.box16 {
+  width: 103px;
+  clear: both;
+  border: 1px solid black;
+  height: 20px;
+  margin: 5px;
+}
+
+/* --------------------------------------------------------------- */
+
+#c12 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+
+#c12 .multi {
+  -webkit-column-width: 120px;
+  -moz-column-width: 120px;
+  column-width: 120px;
+}
+
+/* --------------------------------------------------------------- */
+
+#c13 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+
+#c13 .multi {
+  -webkit-column-width: 120px;
+  -moz-column-width: 120px;
+  column-width: 120px;
+  column-count: 3;
+}
+
+/* --------------------------------------------------------------- */
+
+#c14 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+  text-align: center;
+}
+#c14 div {
+  padding: 20px;
+  width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+#c14 .multi {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  -webkit-column-rule: 2px dotted #000;
+  -moz-column-rule: 2px dotted #000;
+  column-rule: 2px dotted #000;
+  text-align: justify;
+}
+
+/* --------------------------------------------------------------- */
+
+#c15 div.sticky {
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4caf50;
+}
+
+/* --------------------------------------------------------------- */
+
+#c16 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+#c16 section {
+  padding: 20px;
+  width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+#c16 .multi {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-rule: 2px dotted #000;
+  -moz-column-rule: 2px dotted #000;
+  column-rule: 2px dotted #000;
+  text-align: justify;
+}
+#c16 .multi h3 {
+  break-before: column;
+}
+
+/* --------------------------------------------------------------- */
+
+#c17 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+#c17 section {
+  padding: 20px;
+  width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+#c17 .multi {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-rule: 2px dotted #000;
+  -moz-column-rule: 2px dotted #000;
+  column-rule: 2px dotted #000;
+  text-align: justify;
+}
+#c17 .no-col {
+  background: #f0f0f0;
+  margin: 10px 3px;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
+}
+
+/* --------------------------------------------------------------- */
+
+#c18 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+#c18 .table1 {
+  border: 1px solid black;
+}
+#c18 .table1 td {
+  border: 1px dotted black;
+  padding: 10px;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------- */
+
+#c19 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+#c19 .table1 {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+#c19 .table1 td {
+  border: 1px dashed black;
+  padding: 10px;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------- */
+
+#c20 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+#c20 table {
+  margin-bottom: 50px;
+}
+#c20 .table1 {
+  border: 1px solid black;
+  border-collapse: separate;
+  border-spacing: 20px 10px;
+}
+#c20 .table2 {
+  border-collapse: separate;
+  border-spacing: 20px 10px;
+}
+#c20 td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------- */
+
+#c21 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+#c21 .schedule {
+  border-collapse: separate;
+  margin: 20px;
+}
+#c21 td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+#c21 #tb1 td {
+  empty-cells: show;
+}
+#c21 #tb2 td {
+  empty-cells: hide;
+}
+
+/* --------------------------------------------------------------- */
+
+#c22 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+#c22 table {
+  border-collapse: collapse;
+  width: 300px;
+}
+#c22 td {
+  padding: 10px;
+}
+
+/* --------------------------------------------------------------- */
+
+#c23 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+#c23 table,
+td {
+  border: 1px solid #ccc;
+}
+#c23 .table1 {
+  border-collapse: collapse;
+  width: 300px;
+  table-layout: fixed;
+  word-break: break-all;
+  height: auto;
+}
+#c23 .table1 td {
+  width: 150px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+/* --------------------------------------------------------------- */
+
+#c24 table,
+td {
+  border: 1px solid #ccc;
+}
+#c24 td {
+  height: 100px;
+  padding: 20px;
+}
+#c24 .va1 {
+  vertical-align: top;
+}
+#c24 .va2 {
+  vertical-align: bottom;
+}
+#c24 .va3 {
+  vertical-align: middle;
+}
+
+/* --------------------------------------------------------------- */
+
+#c25 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+#c25 a:link {
+  text-decoration: none;
+}
+#c25 nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+#c25 nav ul li {
+  font-size: 1.5em;
+  padding-left: 7px;
+  margin-bottom: 15px;
+  border-left-width: 5px;
+  border-left-color: #990066;
+  border-left-style: solid;
+}
+#c25 section article {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border-top: 1px #a6a6a6 dashed;
+  border-bottom: 1px #a6a6a6 dashed;
+}
