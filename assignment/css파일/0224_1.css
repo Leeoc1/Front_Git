@@ -529,6 +529,7 @@ td {
   border-left-width: 5px;
   border-left-color: #990066;
   border-left-style: solid;
+  float: left;
 }
 #c25 section article {
   padding-left: 10px;
