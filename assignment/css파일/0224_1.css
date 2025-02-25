@@ -472,10 +472,7 @@ div#wrapper {
 #c23 {
   font-family: "맑은 고딕", "고딕", "굴림";
 }
-#c23 table,
-td {
-  border: 1px solid #ccc;
-}
+
 #c23 .table1 {
   border-collapse: collapse;
   width: 300px;
@@ -491,8 +488,7 @@ td {
 
 /* --------------------------------------------------------------- */
 
-#c24 table,
-td {
+#c24 > table td {
   border: 1px solid #ccc;
 }
 #c24 td {
@@ -540,4 +536,22 @@ td {
 }
 #c25 #content {
   clear: both;
+}
+
+/* --------------------------------------------------------------- */
+
+#c26 table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+#c26 caption {
+  caption-side: bottom;
+}
+#c26 th,
+td {
+  padding: 10px;
+}
+
+#c26 .heading {
+  background-color: #eee;
 }
