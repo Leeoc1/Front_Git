@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+    <link rel="stylesheet" href="./css파일/border.css">
+    <script src="./js파일/0225.js" defer></script>
+    <style>
+        #myDiv1,
+        #myDiv2 {
+            background-color: coral;
+            padding: 50px;
+        }
+
+        #myP1,
+        #myP2 {
+            background-color: white;
+            font-size: 20px;
+            border: 1px solid;
+            padding: 20px;
+        }
+
+        #myDIV {
+            background-color: coral;
+            border: 1px solid;
+            padding: 50px;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="c1">
+        <h1>HTML 안에서 js 사용</h1>
+        <h2>The onclick Attribute</h2>
+
+        <button onclick="document.getElementById('result_1').innerHTML=Date()">The time is?</button>
+
+        <p id="result_1"></p>
+    </section>
+    <section id="c2">
+        <h1>HTML 안에서 js를 사용하여 버튼 자체를 이벤트</h1>
+        <h2>The onclick Attribute</h2>
+
+        <button onclick="this.innerHTML=Date()">The time is?</button>
+    </section>
+    <section id="c3">
+        <h1>js 에서 함수 정의</h1>
+        <h2>The onclick Attribute</h2>
+        <button onclick="nowDate_1()">js 함수 사용</button>
+        <p id="result_2"></p>
+    </section>
+    <section id="c4">
+        <h2>addEventListener() = 온클릭 등 이벤트 속성을 js에서 처리</h2>
+        <button id="myDate">js에서 온클릭</button>
+        <p id="result_3"></p>
+    </section>
+    <section id="c5">
+        <h2>addEventListener(이벤트유형, 함수,이벤트캡처)</h2>
+        <button id="result_4">함수를 안에서 정의</button>
+    </section>
+    <section id="c6">
+        <h2>addEventListener(이벤트유형, 함수,이벤트캡처)</h2>
+        <button id="result_5">함수를 밖에서 정의</button>
+    </section>
+    <section id="c7">
+        <h2>addEventListener() 여러개 이벤트 동시 생성</h2>
+        <button id="result_6">alert 2개</button>
+    </section>
+    <section id="c8">
+        <h2>addEventListener() 여러개 이벤트 동시 생성</h2>
+        <button id="mouse">이벤트 3개</button>
+        <p id="result_7"></p>
+    </section>
+    <section id="c9">
+        <h2>window.addEventListener()</h2>
+        <p id="result_8"></p>
+    </section>
+    <section id="c10">
+        <h2>함수안에 매개변수 사용</h2>
+        <button id="multip">곱셈동작</button>
+        <p id="result_9"></p>
+    </section>
+    <section id="c11">
+        <h2>버블링(false기본값, 상향식)과 캡처링(true하향식)</h2>
+        <div id="myDiv1">
+            <h2>버블링:</h2>
+            <p id="myP1">Click me!</p>
+        </div><br>
+
+        <div id="myDiv2">
+            <h2>캡처링:</h2>
+            <p id="myP2">Click me!</p>
+        </div>
+    </section>
+    <section id="c12">
+        <h2>함수 삭제: removeEventListener()</h2>
+        <div id="myDIV">
+            <p>This div element has an onmousemove event handler that displays a random number every time you move your
+                mouse inside this orange field.</p>
+            <p>Click the button to remove the div's event handler.</p>
+            <button onclick="removeHandler()" id="myBtn">Remove</button>
+        </div>
+
+        <p id="result_10"></p>
+    </section>
+</body>
+
+</html>
