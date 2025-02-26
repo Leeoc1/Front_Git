@@ -108,3 +108,144 @@ function showPHNum() {
   var resNum = userNum.substring(0, userNum.length - 4) + "****";
   document.getElementById("demo2").innerHTML = resNum + "<br>";
 }
+
+// ------------------------------------------------------------------
+
+function mail_check() {
+  var userEmail = prompt("당신의 이메일 주소는?", "lch5752@gmail.com");
+  var arrUrl = [".co.kr", ".com", ".net", ".or.kr", ".go.kr"];
+
+  var check1 = false;
+  var check2 = false;
+
+  if (userEmail.indexOf("@") > 0) {
+    check1 = true;
+  }
+
+  for (var i = 0; i < arrUrl.length; i++) {
+    if (userEmail.indexOf(arrUrl[i]) > 0) {
+      check2 = true;
+    }
+  }
+
+  if (check1 && check2) {
+    document.getElementById("result_1").innerHTML = userEmail;
+  } else {
+    document.getElementById("result_1").innerHTML = "이메일 형식이 잘못됨";
+  }
+}
+
+// ------------------------------------------------------------------
+
+const contry = ["영어", "중국어"];
+const subjects = ["쓰기", "말하기"];
+const s_map = new Map();
+
+function n_score() {
+  for (let i = 0; i < contry.length; i++) {
+    s_map.set(contry[i], []);
+    for (let k = 0; k < subjects.length; k++) {
+      s_map
+        .get(contry[i])
+        .push(prompt(`${contry[i]}의 ${subjects[k]} 점수는?`));
+    }
+  }
+  document.getElementById("result_2").innerHTML = `
+  영어: ${s_map.get("영어")}<br>
+  중국어: ${s_map.get("중국어")}`;
+}
+
+// ------------------------------------------------------------------
+
+const users = {
+  userA: [50, 60, 100],
+  userB: [80, 90, 70],
+  userC: [75, 80, 90],
+};
+const { userA, userB } = users;
+const arr_3 = [...userA, ...userB];
+let sum = 0;
+for (let u = 0; u < arr_3.length; u++) {
+  sum += arr_3[u];
+}
+document.getElementById(
+  "result_3"
+).innerHTML = `userA와 userB의 점수 합계는 ${sum}점`;
+
+// ------------------------------------------------------------------
+
+const arr1 = [10, 20, 30];
+const arr2 = arr1.map((item) => item / 10);
+
+const arr3 = ["홍길동", "김갑중", "박상무"];
+const arr4 = arr3.map((item, index) => {
+  let obj = {};
+  obj["no"] = index + 1; // idx 대신 index 사용
+  obj["userName1"] = item;
+  return obj;
+});
+
+// 배열을 보기 좋게 출력하기 위해 문자열로 변환
+document.getElementById("result_4").innerHTML = `${arr2.join(", ")}<br>${arr4
+  .map((obj) => `no: ${obj.no}, 이름: ${obj.userName1}`)
+  .join("<br>")}`;
+
+// ------------------------------------------------------------------
+
+function checkScores() {
+  const subjects = ["쓰기", "듣기", "말하기"];
+  const arr1 = subjects.map((item) => {
+    return prompt(`${item}의 점수는?`, "0");
+  });
+
+  let result = arr1.some((item) => item < 60);
+  result = result ? "불합격" : "합격";
+
+  document.getElementById("result_5").innerHTML = result;
+}
+
+// ------------------------------------------------------------------
+
+function checkScores1() {
+  const subjects = ["쓰기", "듣기", "말하기"];
+  const arr1 = subjects.map((item) => {
+    const score = prompt(`${item}의 점수는?`, "0");
+    return score !== null ? Number(score) : 0; // 숫자 변환 및 취소 처리
+  });
+
+  let result = arr1.every((item) => item >= 60);
+  result = result ? "합격" : "불합격";
+
+  document.getElementById("result_6").innerHTML = result;
+}
+
+// ------------------------------------------------------------------
+
+const fruit_1 = ["딸기", "바나나", "파인애플"];
+const fruit_2 = ["바나나", "딸기", "오렌지", "키위"];
+let fruit_3 = [];
+
+fruit_3 = [...fruit_1];
+fruit_2.map((item) => {
+  if (!fruit_3.includes(item)) {
+    fruit_3.push(item);
+  }
+});
+
+document.getElementById("result_7").innerHTML = fruit_3.join(", ");
+
+// ------------------------------------------------------------------
+
+function checkScores2() {
+  const subjects = ["쓰기", "듣기", "말하기"];
+  const arr1 = [];
+  for (let item of subjects) {
+    const score = prompt(`${item}의 점수는?`, "0");
+    arr1.push(score !== null ? Number(score) : 0); // 숫자 변환 및 취소 처리
+  }
+
+  let result = arr1.every((item) => item >= 60);
+  result = result ? "합격" : "불합격";
+
+  document.getElementById("result_8").innerHTML = result;
+}
