@@ -1,0 +1,354 @@
+@charset "utf-8";
+
+body > section {
+  border: 2px solid rgb(255, 0, 191);
+  margin: 10px;
+  padding: 10px;
+  display: table;
+}
+
+/* ----------------------------------------------------------- */
+
+#c2 {
+  font: 14px 맑은 고딕;
+}
+
+#c2 .container {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+}
+
+#c2 header {
+  position: relative;
+  height: 280px;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+#c2 header h1 {
+  position: absolute;
+  right: 20px;
+  bottom: 70px;
+  font-size: 3em;
+  color: #ffc;
+  text-shadow: 1px 2px 2px #000;
+}
+
+#c2 header h2 {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  font-size: 2em;
+  color: #ff0;
+  text-shadow: 0px 1px 1px #000;
+}
+
+#c2 .navi {
+  position: relative;
+  background: #271717;
+  margin-top: -15px;
+  width: 960px;
+  height: 60px;
+}
+
+#c2 .navi ul {
+  list-style: none;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  overflow: hidden; /* float 해제 */
+}
+
+#c2 .navi ul li {
+  float: left; /* 가로 배치 */
+  font-size: 15px;
+}
+
+#c2 .navi a,
+#c2 .navi a:visited {
+  padding: 10px 5px 5px 35px;
+  display: block;
+  color: #fff;
+  width: 150px;
+  text-decoration: none;
+}
+
+#c2 .navi a:hover,
+#c2 .navi a:active,
+#c2 .navi a:focus {
+  text-shadow: 0px 2px 2px #000;
+  color: #fc0;
+}
+
+#c2 .sidebar {
+  float: right;
+  width: 200px;
+  height: 550px;
+  background-color: #dfd;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#c2 .sidebar img {
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+#c2 .content {
+  background-color: #ffffff;
+  padding-top: 5px;
+  padding-left: 10px;
+  width: 720px;
+  float: left;
+}
+
+#c2 .banner {
+  margin: 0 10px 15px 10px;
+  padding: 0;
+}
+
+#c2 footer {
+  padding: 10px 0;
+  background-color: #030;
+  color: #fff;
+  text-align: center;
+  clear: both;
+}
+/* ----------------------------------------------------------- */
+
+#c3 {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+}
+
+/* ----------------------------------------------------------- */
+
+#c4 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+
+#c4 #wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#c4 header {
+  width: 100%;
+  height: 150px;
+  background-color: #f46075;
+  background-image: url(../images/nav2.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+#c4 header nav {
+  float: left;
+  width: 70%;
+  margin-top: 50px;
+}
+
+#c4 nav ul {
+  list-style-type: none;
+}
+
+#c4 nav ul li {
+  display: inline;
+  float: left;
+  font-weight: bold;
+  margin: 15px;
+}
+
+#c4 nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#c4 footer p {
+  padding: 20px;
+}
+
+#c4 h1 {
+  font-size: 2em;
+}
+
+#c4 h2 {
+  font-size: 1.5em;
+}
+
+#c4 h3 {
+  font-size: 1em;
+}
+
+#c4 p {
+  line-height: 20px;
+  font-size: 12px;
+}
+
+#c4 section {
+  float: left;
+  width: 580px;
+  padding: 5px;
+}
+
+#c4 section article {
+  float: left;
+  width: 250px;
+  height: 220px;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#c4 aside {
+  float: right;
+  width: 200px;
+  height: auto;
+  margin-top: 80px;
+  border: 1px solid darkgreen;
+  text-align: center;
+}
+
+#c4 footer {
+  clear: both;
+  width: 800px;
+  margin-bottom: 0;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+#c4 .at1,
+#c4 .at2,
+#c4 .at3,
+#c4 .at4 {
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -ms-transition: 1s;
+}
+
+#c4 .at1:hover {
+  background-color: #cf9;
+  border: 1px solid green;
+}
+
+#c4 .at2:hover {
+  background-color: #a2d0ff;
+  border: 1px solid blue;
+}
+
+#c4 .at3:hover {
+  background-color: #ebcbfe;
+  border: 1px solid purple;
+}
+
+#c4 .at4:hover {
+  background-color: #fc3;
+  border: 1px solid red;
+}
+
+/* ----------------------------------------------------------- */
+
+#c5 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#c5 header {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #069;
+  padding: 10px;
+  overflow: hidden;
+}
+
+#c5 header h1 {
+  width: 40%;
+  float: left;
+  color: #ffffff;
+}
+
+#c5 header nav {
+  width: 60%;
+  float: right;
+  overflow: hidden; /* 넘침 방지 */
+}
+
+#c5 nav ul {
+  list-style-type: none;
+}
+
+#c5 nav ul li {
+  float: left; /* 가로 배치 */
+  margin: 0 15px; /* 수평 마진만 적용 */
+}
+
+#c5 nav ul li a {
+  color: white;
+  text-decoration: none;
+  white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}
+
+/* 나머지 CSS는 그대로 */
+#c5 p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+#c5 h1 {
+  font-size: 2em;
+}
+
+#c5 article {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 5px solid #333;
+  padding: 5px;
+  overflow: hidden;
+}
+
+#c5 article section {
+  width: 30%;
+  height: 650px;
+  float: left;
+  margin: 5px;
+  padding: 5px;
+  border: 1px dotted #333;
+}
+
+#c5 section h3 {
+  background: url("../images/bg-note.png") no-repeat left center;
+  padding-left: 30px;
+}
+
+#c5 aside {
+  clear: both;
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  background-color: #99cc33;
+}
+
+#c5 footer {
+  clear: both;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
