@@ -270,6 +270,7 @@ body > section {
   background-color: #069;
   padding: 10px;
   overflow: hidden;
+  height: 90px; /* 고정 높이 추가 */
 }
 
 #c5 header h1 {
