@@ -1,0 +1,320 @@
+body > section {
+  border: 2px solid rgb(255, 0, 191);
+  margin: 10px;
+  padding: 10px;
+  display: table;
+}
+#c1 #container ul {
+  border: 1px dotted blue; /* #container 요소의 모든 하위 ul 요소에 파란 1px 실선 */
+}
+#c2 #container1 > ul {
+  border: 1px dotted blue; /* #container 요소의 모든 하위 ul 요소에 파란 1px 실선 */
+}
+#c3 h1 + ul {
+  /* h1 요소 다음의 첫 번째 ul 요소에 적용할 스타일 */
+  color: blue; /* 글자색 파랑 */
+  font-weight: bold; /* 글자 굵게 */
+}
+#c4 h1 ~ ul {
+  color: blue; /* 글자색 파랑 */
+  font-weight: bold; /* 글자 굵게 */
+}
+#c5 ul {
+  list-style: none;
+}
+#c5 li {
+  width: 120px;
+  display: inline-block;
+  margin: 10px;
+}
+#c5 li a {
+  padding: 5px 20px;
+  font-size: 14px;
+  color: blue;
+  text-decoration: none;
+}
+#c5 a[href] {
+  background: yellow;
+}
+
+#c6 ul {
+  list-style: none;
+}
+#c6 li {
+  padding: 5px 30px;
+}
+#c6 li a {
+  font-size: 16px;
+  color: blue;
+  text-decoration: none;
+}
+#c6 a[target="_blank"] {
+  padding-right: 30px;
+  background: url(../images/newwindow.png) no-repeat center right;
+}
+
+#c7 ul {
+  list-style: none;
+}
+#c7 li {
+  display: inline-block;
+  margin: 10px;
+}
+#c7 li a {
+  padding: 5px 20px;
+  font-size: 14px;
+  color: blue;
+  text-decoration: none;
+}
+#c7 .flat {
+  background: blue;
+  color: white;
+}
+#c7 [class~="button"] {
+  border: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.4) 5px 5px;
+}
+
+#c8 ul {
+  list-style: none;
+}
+#c8 li {
+  display: inline-block;
+  margin: 10px;
+}
+#c8 li a {
+  padding: 5px 20px;
+  font-size: 14px;
+  color: blue;
+  text-decoration: none;
+}
+#c8 a[title|="us"] {
+  background: url(../images/us.png) no-repeat left center;
+  padding: 5px 25px;
+}
+#c8 a[title|="jap"] {
+  background: url(../images/jp.png) no-repeat left center;
+  padding: 5px 25px;
+}
+
+#c9 ul {
+  list-style: none;
+}
+#c9 li {
+  display: inline-block;
+  margin: 10px;
+}
+#c9 li a {
+  padding: 5px 20px;
+  font-size: 14px;
+  color: blue;
+  text-decoration: none;
+}
+#c9 a[title^="eng"] {
+  background: url(../images/us.png) no-repeat left center;
+  padding: 5px 25px;
+}
+#c9 a[title^="jap"] {
+  background: url(../images/jp.png) no-repeat left center;
+  padding: 5px 25px;
+}
+#c9 a[title^="chin"] {
+  background: url(../images/ch.png) no-repeat left center;
+  padding: 5px 25px;
+}
+
+#c10 ul {
+  list-style: square;
+}
+#c10 li a {
+  line-height: 30px;
+  font-size: 14px;
+  color: blue;
+  text-decoration: none;
+}
+#c10 a[href$="hwp"] {
+  /* 연결한 파일의 확장자가 hwp인 링크 */
+  background: url(../images/hwp_icon.gif) center right no-repeat; /* 배경으로 hwp 아이콘 표시 */
+  padding-right: 25px; /* 아이콘을 표시할 수 있도록 오른쪽에 25px 여백 */
+}
+
+#c10 a[href$="xls"] {
+  /* 연결한 파일의 확장자가 hwp인 링크 */
+  background: url(../images/excel_icon.gif) center right no-repeat; /* 배경으로 hwp 아이콘 표시 */
+  padding-right: 25px; /* 아이콘을 표시할 수 있도록 오른쪽에 25px 여백 */
+}
+
+#c11 ul {
+  list-style: circle;
+}
+#c11 li {
+  padding: 5px 30px;
+}
+#c11 li a {
+  font-size: 16px;
+  color: blue;
+  text-decoration: none;
+}
+#c11 [href*="w3"] {
+  background: blue;
+  color: white;
+}
+
+#c12 .container3 {
+  width: 960px;
+  margin: 0 auto;
+}
+#c12 .navi {
+  width: 960px;
+  height: 60px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+}
+
+#c12 .navi ul {
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+#c12 .navi ul li {
+  display: inline-block;
+  width: 150px;
+  padding: 10px;
+}
+#c12 .navi a:link,
+#c12 .navi a:visited {
+  font-size: 14px;
+  padding: 10px;
+  text-decoration: none; /* 밑줄 없음 */
+}
+#c12 .navi a:hover,
+#c12 .navi a:focus {
+  background-color: #222; /* 배경 색 */
+  color: #fff; /* 글자 색 */
+}
+
+#c12 .navi a:active {
+  background-color: #f00; /* 배경 색 */
+}
+
+#c13 input:disabled {
+  background: #ddd;
+  border: 1px solid #ccc;
+}
+#c13 input:checked + span {
+  color: red;
+}
+
+#c14 #container {
+  text-align: center;
+  color: #2b2b2b;
+}
+#c14 table,
+#c14 td,
+#c14 th {
+  border: 1px solid #ccc;
+}
+#c14 table {
+  width: 200px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+#c14 td {
+  text-align: left;
+  padding: 10px;
+  padding-left: 20px;
+}
+#c14 table tr:nth-child(odd) {
+  background: lightgray;
+  color: black;
+}
+
+#c15 ul.navi li {
+  list-style-type: none; /* 불릿 없앰 */
+  display: block; /* 영역 만듦 */
+  width: 8em; /* 너비 */
+  height: 3em; /* 높이 */
+  float: left; /* 왼쪽으로 플로팅 */
+  text-align: center; /* 가운데 정렬 */
+  font-family: "Lucida Grande", sans-serif; /* 글꼴 */
+  border: 1px #818181 solid; /* 테두리 */
+  box-shadow: 1px 1px 1px #bbb; /* 박스 그림자 */
+}
+
+/* 메뉴 링크 스타일 */
+#c15 ul.navi li a {
+  display: block; /* 영역 만듦 */
+  padding: 0.8em 0.5em 0.5em 0.5em; /* 안여백 */
+  text-decoration: none; /* 밑줄 없앰 */
+  color: #292929; /* 글자색 */
+  text-shadow: 1px 1px 0px #cccccc; /* 텍스트 그림자 */
+}
+
+/* 메뉴 링크 위로 마우스 오버했을 때의 스타일 */
+#c15 ul.navi li:hover {
+  background-color: #333333; /* 배경색 */
+}
+
+/* 메뉴 링크 위로 마우스 오버한 후 링크 스타일 */
+#c15 ul.navi li:hover > a {
+  color: #fff; /* 글자색 */
+  text-shadow: 0px 1px 0px #fff; /* 텍스트 그림자 */
+}
+
+/* 첫번째 항목의 스타일 */
+#c15 ul.navi li:first-child {
+  border-top-left-radius: 1em; /* 왼쪽 상단 코너를 부드럽게 */
+  border-bottom-left-radius: 1em; /* 왼쪽 하단 코너를 부드럽게 */
+}
+
+/* 마지막 항목의 스타일 */
+#c15 ul.navi li:last-child {
+  border-top-right-radius: 1em; /*오른쪽 상단 코너를 부드럽게 */
+  border-bottom-right-radius: 1em; /* 오른쪽 하단 코너를 부드럽게 */
+}
+
+#c16 .container5 {
+  width: 960px;
+  margin: 0 auto;
+}
+#c16 ul li {
+  margin: 15px;
+}
+#c16 li.hot::after {
+  content: "NEW!!";
+  font-size: x-small;
+  padding: 2px 4px;
+  margin: 0 10px;
+  border-radius: 2px;
+  background: #f00;
+  color: #fff;
+}
+#c17 .top-img:hover {
+  border: 5px solid black;
+}
+
+#c18 .main-menu {
+  margin: 50px auto;
+  height: 60px;
+  border: 1px solid black;
+}
+#c18 .main-menu ul {
+  margin: 0;
+  list-style: none;
+}
+#c18 .main-menu ul li {
+  display: inline-block;
+  padding: 10px 30px;
+  line-height: 40px;
+}
+#c18 .main-menu ul li a {
+  color: black;
+  text-decoration: none;
+}
+#c18 .main-menu ul li a:visited {
+  color: black;
+}
+#c18 .main-menu ul li a:active {
+  color: blue;
+  font-weight: bold;
+}
