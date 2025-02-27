@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멀티미디어</title>
+    <link rel="stylesheet" href="./css파일/border.css">
+    <style>
+        #c6 {
+            background: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        #c8 {
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+
+        #c9 #container {
+            position: relative;
+            text-align: center;
+        }
+
+        #c9 h2 {
+            font-size: 2em;
+        }
+
+        #c9 h1 {
+            font-size: 3.5em;
+        }
+
+        #c9 a:link,
+        #c9 a:visited {
+            text-decoration: none;
+            color: #222;
+        }
+
+        #c9 a:hover {
+            cursor: pointer;
+        }
+
+        #c9 #bg {
+            position: absolute;
+            /* 부모(#c9)를 기준으로 위치 */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* 부모 섹션의 너비에 맞춤 */
+            height: 100%;
+            /* 부모 섹션의 높이에 맞춤 */
+            object-fit: cover;
+            /* 비디오가 영역을 꽉 채우도록 (종횡비 유지) */
+            z-index: -100;
+            /* 콘텐츠 뒤로 배치 */
+        }
+
+        #c9 {
+            position: relative;
+            /* 섹션이 비디오의 기준점 */
+            width: 100%;
+            /* 섹션 크기를 명확히 지정 (필요에 따라 조정) */
+            height: 100vh;
+            /* 예시로 viewport 높이 사용, 원하는 높이로 변경 가능 */
+            overflow: hidden;
+            /* 섹션 밖으로 넘치는 부분 숨김 */
+        }
+
+        #container1 {
+            width: 600px;
+            margin: 10px auto;
+            padding: 20px;
+        }
+
+        #container2 {
+            width: 600px;
+            margin: 10px auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="c1">
+        <audio src="./media/bgsound.mp3" controls></audio>
+    </section>
+    <section id="c2">
+        <audio src="./media/bgsound2.mp3" autoplay loop></audio>
+    </section>
+    <section id="c3">
+        <video src="./media/Painting.mp4" controls></video>
+    </section>
+    <section id="c4">
+        <video src="./media/Painting.mp4"></video>
+    </section>
+    <section id="c5">
+        <video controls>
+            <source src="./media/Painting.mp4" type="video/mp4">
+            <source src="./media/Painting.webm" type="video/webm">
+            <source src="./media/Painting.ogv" type="video/ogg">
+        </video>
+    </section>
+    <section id="c6">
+        <h1>밤 하늘을 수놓는 불꽃</h1>
+        <video controls muted autoplay>
+            <source src="./media/Fireworks.mp4" type="video/mp4">
+            <source src="./media/Fireworks.webm" type="video/webm">
+        </video>
+    </section>
+    <section id="c7">
+        <video controls>
+            <source src="./media/Painting.mp4" type="video/mp4">
+            <source src="./media/Painting.webm" type="video/webm">
+            <track src="./media/Painting.vtt" srclang="ko" label="Korean" default>
+        </video>
+    </section>
+    <section id="c8">
+        <video controls autoplay src="media/bali.mp4" width="500">
+            <track src="./media/bali.vtt" srclang="ko" label="Korean" default>
+        </video>
+    </section>
+    <section id="c9">
+        <video src="media/flame.mp4" autoplay loop muted poster="./images/flame.jpg" id="bg"></video>
+        <div id="container">
+            <h2>사람을 구체적으로 도와주는 책</h2>
+            <h1><a href="http://www.easyspub.co.kr">이지스퍼블리싱</a></h1>
+        </div>
+    </section>
+    <section id="c10">
+        <div id="container1">
+            <h1>오디오 재생하기</h1>
+            <audio src="media/bgsound2.mp3" controls></audio>
+        </div>
+    </section>
+    <section id="c11">
+        <div id="container2">
+            <h1>SUMMER BEACH</h1>
+            <video width="400" height="220" controls>
+                <source src="media/Beach.mp4" type="video/mp4">
+                <source src="media/Beach.webm" type="video/webm">
+            </video>
+        </div>
+    </section>
+</body>
+
+</html>
