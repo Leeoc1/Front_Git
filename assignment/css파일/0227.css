@@ -290,7 +290,7 @@ body > section {
   color: #fff;
 }
 #c17 .top-img:hover {
-  border: 5px solid black;
+  outline: 5px solid black;
 }
 
 #c18 .main-menu {
