@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브라우저 객체</title>
+    <link rel="stylesheet" href="./css파일/border.css">
+    <script src="./js파일/0227.js" defer></script>
+</head>
+
+<body>
+    <section id="c1">
+        <p>
+            <img src="images/window_object_1.jpg" usemap="#intro" alt="신간 책 소개">
+            <map name="intro" id="intro">
+                <area shape="rect" coords="230, 368, 280, 390" href="#" alt="창닫기" onclick="window.close();">
+            </map>
+        </p>
+    </section>
+    <section id="c2">
+        <p id="result_1"></p>
+        <p id="result_2"></p>
+
+        <button onclick="clearInterval(auto_1)">증가 정지</button>
+        <br><button onclick="clearInterval(auto_2)">감소 정지</button>
+    </section>
+    <section id="c3">
+        <p id="result_3"></p>
+    </section>
+    <section id="c4">
+        <p id="result_4"></p>
+    </section>
+    <section id="c5">
+        <p id="result_5"></p>
+        <p id="result_6"></p>
+    </section>
+    <section id="c6">
+        <p id="result_7"></p>
+    </section>
+
+</body>
+
+</html>
