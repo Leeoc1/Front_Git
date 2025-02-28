@@ -17,7 +17,7 @@ var theFnc_1 = function () {
 
 theFnc_1();
 
-// c2
+// c2 ★
 var color = ["white", "yellow", "aqua", "purple"];
 var i = 0;
 
@@ -81,7 +81,7 @@ function p_Avg() {
     "평균점수는 " + result1 + "점<br>";
 }
 
-// c6
+// c6 ★
 var num = 1;
 function gallery(direct) {
   if (direct) {
