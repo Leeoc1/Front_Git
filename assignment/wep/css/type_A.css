@@ -4,26 +4,34 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* 박스 크기 계산 개선 */
-}
-
-section {
-  margin-top: 30px;
+  box-sizing: border-box;
 }
 
 .wrap {
   width: 1500px;
-  height: auto;
   margin: 0 auto;
+  position: relative;
 }
 
 /* 헤더 */
 header {
+  position: fixed; /* 화면 상단에 고정 */
+  top: 0;
+  left: 0;
+  width: 100vw; /* 창 전체 너비 */
   height: 150px;
+  background: #fff; /* 콘텐츠 가림 방지 */
+  z-index: 1000; /* 다른 요소 위에 표시 */
+  border-bottom: 1px solid #000;
+}
+
+.header-content {
+  width: 1500px; /* .wrap과 동일한 너비 */
+  margin: 0 auto;
+  height: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  border-bottom: 1px solid #000;
 }
 
 .logo img {
@@ -34,9 +42,6 @@ header {
 }
 
 /* 네비게이션 */
-.nav {
-}
-
 .menu {
   list-style: none;
   display: flex;
@@ -91,39 +96,131 @@ header {
   max-height: 200px;
 }
 
-/* 슬라이드 */
-.slideContent {
-  height: 600px;
-  clear: both;
-  display: flex;
+/* 슬라이드 콘텐츠 */
+.slide-container {
+  position: relative;
+  width: 100vw;
+  height: 650px;
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 150px; /* 헤더 높이만큼 간격 */
+  margin-bottom: 30px;
 }
 
-.slideContent > div {
+.slides {
+  display: flex;
+  width: calc(100vw * 3);
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* 콘텐츠 */
+.content {
+  margin-top: 0;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.row > div {
   flex: 1;
   text-align: center;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.slideContent img {
+.row > div:not(:last-child) {
+  margin-right: 20px;
+}
+
+.slide-link {
+  width: 100%;
+  height: 600px;
+  display: block;
+}
+
+.product-content img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-/* 콘텐츠 */
-.content {
-  height: 200px;
-  display: flex;
+.product-info {
+  padding: 10px;
+  text-align: left;
+  background: #f5f5f5;
+  height: 60px;
 }
 
-.content > div {
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #555;
+  text-decoration: none;
+  display: block;
+}
+
+/* 정보 콘텐츠 */
+.info-content {
+  display: flex;
+  height: 200px;
+}
+
+.info-content > div {
   flex: 1;
   text-align: center;
 }
 
-/* 탭 스타일 */
-.con1 {
+.info-content > div:not(:last-child) {
+  margin-right: 20px;
+}
+
+.tab-area {
   display: flex;
   flex-direction: column;
 }
@@ -131,7 +228,6 @@ header {
 .tab-menu {
   display: flex;
   border-bottom: 1px solid #ccc;
-  justify-content: flex-start;
 }
 
 .tab-btn {
@@ -165,32 +261,11 @@ header {
   display: block;
 }
 
-/* con2 스타일 */
-.con2 {
+.ad-area {
   position: relative;
-  overflow: hidden;
 }
 
-.con2 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* 바로가기 스타일 */
-.con3 {
-  position: relative;
-  overflow: hidden;
-}
-
-.link-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-}
-
+.ad-area img,
 .link-image img {
   width: 100%;
   height: 100%;
@@ -198,7 +273,13 @@ header {
   display: block;
 }
 
-/* 공통 이미지 텍스트 스타일 */
+.link-image {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  position: relative;
+}
+
 .image-text {
   position: absolute;
   top: 10px;
@@ -210,88 +291,23 @@ header {
   font-weight: bold;
 }
 
-/* 마진 */
-.slideContent .slid1,
-.slideContent .slid2,
-.content .con1,
-.content .con2 {
-  margin-right: 20px;
-}
-
 /* 푸터 */
 .site-footer {
   background-color: #282c35;
   color: #ffffff;
-  padding: 30px 0; /* 높이 줄이기 위해 패딩 감소 */
+  padding: 30px 0;
   font-size: 14px;
   line-height: 1.5;
-  width: 100vw; /* 창 전체 너비 */
-  position: relative; /* .wrap을 벗어나게 */
+  width: 100vw;
+  position: relative;
   left: 50%;
-  transform: translateX(-50%); /* 중앙 정렬 유지 */
-  text-align: center; /* 모든 텍스트 가운데 정렬 */
-}
-
-.site-footer h6 {
-  color: #ffffff;
-  font-size: 16px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.site-footer .text-justify {
-  text-align: center; /* 가운데 정렬로 변경 */
-}
-
-.site-footer .footer-links {
-  list-style: none;
-  padding-left: 0;
-}
-
-.site-footer .footer-links li {
-  margin-bottom: 10px;
-}
-
-.site-footer .footer-links a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.site-footer .footer-links a:hover {
-  color: #f8f9fa;
-  text-decoration: underline;
-}
-
-.site-footer .social-icons {
-  list-style: none;
-  padding-left: 0;
-}
-
-.site-footer .social-icons li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.site-footer .social-icons a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.site-footer .social-icons a:hover {
-  color: #d1d1d1;
-}
-
-.site-footer hr {
-  border-top: 1px solid #47525d;
-  margin: 20px 0; /* 줄 간격 줄이기 */
-}
-
-.site-footer .text-center {
+  transform: translateX(-50%);
   text-align: center;
+  margin-top: 30px;
 }
 
-.site-footer .container {
-  max-width: 1500px; /* .wrap과 동일한 최대 너비 */
+.container {
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -302,8 +318,49 @@ header {
   flex-wrap: wrap;
 }
 
-.site-footer .col {
+.col {
   flex: 1;
-  min-width: 200px; /* 최소 너비 설정 */
+  min-width: 200px;
   margin: 0 15px;
+}
+
+.site-footer h6 {
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-links,
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.site-footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #f8f9fa;
+  text-decoration: underline;
+}
+
+.site-footer hr {
+  border-top: 1px solid #47525d;
+  margin: 20px 0;
+}
+
+.text-center {
+  text-align: center;
 }

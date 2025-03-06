@@ -12,60 +12,120 @@
 <body>
     <div class="wrap">
         <header>
-            <div class="logo">
-                <img src="./images/logo1.png" alt="Header_Logo" onclick="window.location.reload()">
-            </div>
-            <div class="nav">
-                <ul class="menu">
-                    <li class="menu-item">
-                        <a href="#">TOP</a>
-                        <ul class="submenu">
-                            <li><a href="#">블라우스</a></li>
-                            <li><a href="#">티</a></li>
-                            <li><a href="#">셔츠</a></li>
-                            <li><a href="#">니트</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">SHIRTS</a>
-                        <ul class="submenu">
-                            <li><a href="#">자켓</a></li>
-                            <li><a href="#">코트</a></li>
-                            <li><a href="#">가디건</a></li>
-                            <li><a href="#">머플러</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">PANTS</a>
-                        <ul class="submenu">
-                            <li><a href="#">청바지</a></li>
-                            <li><a href="#">짧은바지</a></li>
-                            <li><a href="#">긴바지</a></li>
-                            <li><a href="#">레깅스</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">ACC</a>
-                        <ul class="submenu">
-                            <li><a href="#">귀고리</a></li>
-                            <li><a href="#">목걸이</a></li>
-                            <li><a href="#">반지</a></li>
-                            <li><a href="#">팔찌</a></li>
-                        </ul>
-                    </li>
-                </ul>
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./images/logo1.png" alt="Header_Logo" onclick="window.location.reload()">
+                </div>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#">TOP</a>
+                            <ul class="submenu">
+                                <li><a href="#">블라우스</a></li>
+                                <li><a href="#">티</a></li>
+                                <li><a href="#">셔츠</a></li>
+                                <li><a href="#">니트</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="#">SHIRTS</a>
+                            <ul class="submenu">
+                                <li><a href="#">자켓</a></li>
+                                <li><a href="#">코트</a></li>
+                                <li><a href="#">가디건</a></li>
+                                <li><a href="#">머플러</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="#">PANTS</a>
+                            <ul class="submenu">
+                                <li><a href="#">청바지</a></li>
+                                <li><a href="#">짧은바지</a></li>
+                                <li><a href="#">긴바지</a></li>
+                                <li><a href="#">레깅스</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="#">ACC</a>
+                            <ul class="submenu">
+                                <li><a href="#">귀고리</a></li>
+                                <li><a href="#">목걸이</a></li>
+                                <li><a href="#">반지</a></li>
+                                <li><a href="#">팔찌</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </header>
-        <section class="slide">
-            <div class="slideContent ">
-                <div class="slid1"><img src="./images/1.webp" alt="옷1"></div>
-                <div class="slid2"><img src="./images/2.webp" alt="옷2"></div>
-                <div class="slid3"><img src="./images/3.jpg" alt="옷3"></div>
+        <div class="slide-container">
+            <div class="slides">
+                <img src="./images/s1.jpg" alt="슬라이드1">
+                <img src="./images/s2.jpg" alt="슬라이드2">
+                <img src="./images/s3.jpg" alt="슬라이드3">
             </div>
-        </section>
-        <section class="cont">
-            <div class="content">
-                <div class="con1">
+            <button class="prev">◄</button>
+            <button class="next">►</button>
+        </div>
+        <div class="content">
+            <div class="product-content">
+                <div class="row">
+                    <div>
+                        <a href="#" class="slide-link">
+                            <img src="./images/1.webp" alt="옷1">
+                        </a>
+                        <div class="product-info">
+                            <a href="#" class="product-name">헨리넥 오버핏 니트</a>
+                            <a href="#" class="product-price">₩45,000</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" class="slide-link">
+                            <img src="./images/2.webp" alt="옷2">
+                        </a>
+                        <div class="product-info">
+                            <a href="#" class="product-name">피그먼트 코튼 셔츠</a>
+                            <a href="#" class="product-price">₩35,000</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" class="slide-link">
+                            <img src="./images/3.jpg" alt="옷3">
+                        </a>
+                        <div class="product-info">
+                            <a href="#" class="product-name">옥스퍼드 오버핏 셔츠</a>
+                            <a href="#" class="product-price">₩75,000</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <a href="#" class="slide-link">
+                            <img src="./images/4.webp" alt="옷4">
+                        </a>
+                        <div class="product-info">
+                            <a href="#" class="product-name">워셔블 라운드 니트</a>
+                            <a href="#" class="product-price">₩55,000</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" class="slide-link">
+                            <img src="./images/5.jpg" alt="옷5">
+                        </a>
+                        <div class="product-info">
+                            <a href="#" class="product-name">뒷밴딩 와이드 데님팬츠</a>
+                            <a href="#" class="product-price">₩65,000</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" class="slide-link">
+                            <img src="./images/6.webp" alt="옷6">
+                        </a>
+                        <div class="product-info">
+                            <a href="#" class="product-name">샌프란시스코 워싱 맨투맨</a>
+                            <a href="#" class="product-price">₩120,000</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-content">
+                <div class="tab-area">
                     <div class="tab-menu">
                         <button class="tab-btn active" data-tab="notice">공지사항</button>
                         <button class="tab-btn" data-tab="event">이벤트</button>
@@ -75,74 +135,58 @@
                         <div id="event" class="tab-pane">이벤트 내용입니다.</div>
                     </div>
                 </div>
-                <div class="con2">
+                <div class="ad-area">
                     <img src="./images/add.jpg" alt="광고">
                     <span class="image-text">유료광고</span>
                 </div>
-                <div class="con3">
+                <div>
                     <a href="#" class="link-image">
-                        <img src="./images/4.jpg" alt="바로구매">
+                        <img src="./images/direct.jpg" alt="바로구매">
                         <span class="image-text">바로구매!!</span>
                     </a>
                 </div>
             </div>
-        </section>
-        <section class="foot">
-            <footer>
-                <footer class="site-footer">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <h6>About</h6>
-                                <p class="text-justify">Our company specializes in providing high-quality services and
-                                    products to our valued customers. We are dedicated to excellence and strive to
-                                    exceed expectations in everything we do.</p>
-                            </div>
-
-                            <div class="col">
-                                <h6>Quick Links</h6>
-                                <ul class="footer-links">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Contact Us</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col">
-                                <h6>Contact Us</h6>
-                                <ul class="footer-links">
-                                    <li><a href="mailto:info@company.com">Email: info@company.com</a></li>
-                                    <li><a href="tel:+1234567890">Phone: +1 234 567 890</a></li>
-                                    <li><a href="#">Address: 123 Street, City, Country</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col">
-                                <h6>Follow Us</h6>
-                                <ul class="social-icons">
-                                    <li><a href="#" class="icon icon-twitter"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#" class="icon icon-facebook"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li><a href="#" class="icon icon-instagram"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li><a href="#" class="icon icon-linkedin"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <hr />
-
-                        <div class="row">
-                            <div class="col">
-                                <p class="text-center">© 2025 Your Company. All rights reserved.</p>
-                            </div>
-                        </div>
+        </div>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h6>About</h6>
+                        <p>Our company specializes in providing high-quality services and products to our valued
+                            customers. We are dedicated to excellence and strive to exceed expectations in everything we
+                            do.</p>
                     </div>
-                </footer>
-            </footer>
-        </section>
+                    <div class="col">
+                        <h6>Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h6>Contact Us</h6>
+                        <ul class="footer-links">
+                            <li><a href="mailto:info@company.com">Email: info@company.com</a></li>
+                            <li><a href="tel:+1234567890">Phone: +1 234 567 890</a></li>
+                            <li><a href="#">Address: 123 Street, City, Country</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h6>Follow Us</h6>
+                        <ul class="social-icons">
+                            <li><a href="#" class="icon icon-twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="icon icon-facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="icon icon-instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" class="icon icon-linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="text-center">© 2025 Your Company. All rights reserved.</p>
+            </div>
+        </footer>
     </div>
 </body>
 
